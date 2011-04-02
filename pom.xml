@@ -138,6 +138,7 @@
             </plugin>
         </plugins>
         <finalName>hope_website</finalName>
+        <sourceDirectory>src</sourceDirectory>
           <resources>
 			<resource>
 				<directory>resources</directory>
