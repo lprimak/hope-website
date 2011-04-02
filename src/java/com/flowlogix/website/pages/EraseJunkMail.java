@@ -8,9 +8,11 @@ import lombok.SneakyThrows;
 import org.apache.tapestry5.annotations.AfterRender;
 import org.apache.tapestry5.annotations.OnEvent;
 import org.apache.tapestry5.annotations.Persist;
+import org.apache.tapestry5.annotations.Secure;
 
 import com.flowlogix.website.impl.JunkMailEraser;
 
+@Secure
 public class EraseJunkMail
 {
 	@SneakyThrows(NamingException.class)
