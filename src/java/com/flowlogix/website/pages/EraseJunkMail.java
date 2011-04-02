@@ -2,6 +2,7 @@ package com.flowlogix.website.pages;
 
 import lombok.Getter;
 
+import org.apache.tapestry5.annotations.AfterRender;
 import org.apache.tapestry5.annotations.OnEvent;
 import org.apache.tapestry5.annotations.Persist;
 
@@ -11,19 +12,21 @@ public class EraseJunkMail
     @OnEvent(component="eraseJunkMail", value="clicked")
     private void eraseJunkMail()
     {
-        junkMailErased = "yes!";
+        junkMailErased = "Erased!";
     }
-
+    
     
     @SuppressWarnings("unused")
-    @OnEvent(component="reset", value="clicked")
-    private void resetJunkMail()
+	@AfterRender
+    private void afterRender()
     {
-        junkMailErased = "no!";
+    	if(junkMailErased != null)
+    	{
+    		junkMailErased = null;
+    	}
     }
 
     
-    
-    @Persist
+    @Persist("flash")
     @Getter private String junkMailErased;
 }

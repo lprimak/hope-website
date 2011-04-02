@@ -6,7 +6,6 @@
 </head>
 <body>
   <h1>Press <button t:type="chenillekit/button" t:id="eraseJunkMail" accesskey="J">Erase</button> to Erase Junk E-Mail</h1>
-  <button t:type="chenillekit/button" t:id="reset" accesskey="J">Reset</button>
   <h3>Junk Status: ${junkMailErased}</h3>
 </body>
 </html>
