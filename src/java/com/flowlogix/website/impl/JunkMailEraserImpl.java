@@ -3,6 +3,7 @@ package com.flowlogix.website.impl;
 import java.util.logging.Logger;
 
 import javax.annotation.Resource;
+import javax.ejb.Local;
 import javax.ejb.Stateless;
 import javax.mail.Flags.Flag;
 import javax.mail.Folder;
@@ -17,6 +18,7 @@ import lombok.Cleanup;
 import lombok.SneakyThrows;
 
 @Stateless(name = "JunkMailEraser")
+@Local
 public class JunkMailEraserImpl implements JunkMailEraser
 {
 	@SneakyThrows({ MessagingException.class })

@@ -1,10 +1,12 @@
 package com.flowlogix.website.impl;
 
+import javax.ejb.Local;
 import javax.ejb.Stateless;
 
 import com.flowlogix.website.JunkMailEraser;
 
 @Stateless
+@Local
 public class JunkMailEraserMock implements JunkMailEraser 
 {
 	@Override
