@@ -11,13 +11,16 @@ import javax.mail.MessagingException;
 import javax.mail.Session;
 import javax.mail.Store;
 
+import com.flowlogix.website.JunkMailEraser;
+
 import lombok.Cleanup;
 import lombok.SneakyThrows;
 
-@Stateless
-public class JunkMailEraser 
+@Stateless(name = "JunkMailEraser")
+public class JunkMailEraserImpl implements JunkMailEraser
 {
 	@SneakyThrows({ MessagingException.class })
+	@Override
 	public void erase()
 	{
         @Cleanup Store store = mailSession.getStore();
@@ -32,6 +35,22 @@ public class JunkMailEraser
         }
         junkFolder.close(true);        
 	}
+	
+	
+	@Override
+	@SneakyThrows(MessagingException.class)
+	public void testConnection()
+	{
+		@Cleanup Store store = mailSession.getStore();
+	}
+	
+	
+	@Override
+	public boolean isMock()
+	{
+		return false;
+	}
+	
 	
 	@Resource(name="mail/HopeMail") private Session mailSession;
 	private Logger log = Logger.getLogger(getClass().getName());

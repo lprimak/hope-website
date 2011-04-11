@@ -1,16 +1,17 @@
 package com.flowlogix.website.pages;
 
+import javax.ejb.EJBException;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 
 import lombok.SneakyThrows;
 
-import org.apache.tapestry5.annotations.AfterRender;
 import org.apache.tapestry5.annotations.OnEvent;
+import org.apache.tapestry5.annotations.PageReset;
 import org.apache.tapestry5.annotations.Persist;
 import org.apache.tapestry5.annotations.Secure;
 
-import com.flowlogix.website.impl.JunkMailEraser;
+import com.flowlogix.website.JunkMailEraser;
 
 @Secure
 public class EraseJunkMail
@@ -18,7 +19,18 @@ public class EraseJunkMail
 	@SneakyThrows(NamingException.class)
 	public EraseJunkMail() 
 	{
-		eraser = (JunkMailEraser)new InitialContext().lookup("java:global/hope_website/JunkMailEraser");
+		final InitialContext ic = new InitialContext();
+		final String eraserName = "java:global/hope_website/" + JunkMailEraser.NAME;
+		JunkMailEraser eraser = (JunkMailEraser)ic.lookup(eraserName);
+		try
+		{
+			eraser.testConnection();
+		}
+		catch(EJBException e)
+		{
+			eraser = (JunkMailEraser)ic.lookup(eraserName + "Mock");	
+		}
+		this.eraser = eraser;
 	}
 	
 	
@@ -27,13 +39,20 @@ public class EraseJunkMail
     private void eraseJunkMail()
     {    	
     	eraser.erase();
-        junkMailErased = "Erased!";
+    	if(eraser.isMock())
+    	{
+    		junkMailErased = "Erased Mock!";
+    	}
+    	else
+    	{
+    		junkMailErased = "Erased!";
+    	}
     }
     
     
     @SuppressWarnings("unused")
-	@AfterRender
-    private void afterRender()
+	@PageReset
+    private void pageReset()
     {
     	if(junkMailErased != null)
     	{
