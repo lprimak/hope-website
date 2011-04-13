@@ -20,11 +20,12 @@ public class EraseJunkMail
 	public EraseJunkMail() 
 	{
 		final InitialContext ic = new InitialContext();
-		final String eraserName = "java:global/hope_website/" + JunkMailEraser.NAME;
+		final String eraserName = "java:module/" + JunkMailEraser.NAME;
 		JunkMailEraser eraser = (JunkMailEraser)ic.lookup(eraserName);
 		try
 		{
-			eraser.testConnection();
+			// call any method to actually test the bean
+			eraser.isMock();
 		}
 		catch(EJBException e)
 		{

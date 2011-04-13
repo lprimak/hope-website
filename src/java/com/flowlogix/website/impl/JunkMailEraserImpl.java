@@ -36,15 +36,7 @@ public class JunkMailEraserImpl implements JunkMailEraser
         junkFolder.close(true);        
 	}
 	
-	
-	@Override
-	@SneakyThrows(MessagingException.class)
-	public void testConnection()
-	{
-		@Cleanup Store store = mailSession.getStore();
-	}
-	
-	
+		
 	@Override
 	public boolean isMock()
 	{

@@ -12,14 +12,7 @@ public class JunkMailEraserMock implements JunkMailEraser
 	{
 		// just a fake test
 	}
-	
-	
-	@Override
-	public void testConnection()
-	{
-		// blank
-	}
-	
+		
 	
 	@Override
 	public boolean isMock() 

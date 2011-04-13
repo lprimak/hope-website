@@ -6,7 +6,6 @@ import javax.ejb.Local;
 public interface JunkMailEraser 
 {
 	public void erase();
-	public void testConnection();
 	public boolean isMock();
 	
 	public static final String NAME = JunkMailEraser.class.getSimpleName();
