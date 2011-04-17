@@ -6,10 +6,10 @@
 <title>Erase Junk Mail</title>
 </head>
 <body>
-  <form t:type="form" zone="junkStatus">
+  <form t:type="form" zone="junkStatus" width="100%">
 	<h1>Press <input t:type="submit" value="Here" event="erase"/> to Erase Junk Email</h1>
   </form>
-  <t:zone t:id="junkStatus" id="junkStatus" update="colorhighlight" t:mixins="ColorHighlight" color='#5AACFD'>
+  <t:zone t:id="junkStatus" update="colorhighlight" t:mixins="ColorHighlight" color='#5AACFD' width="100%">
     <h3>Junk Status: ${junkMailErased}</h3>
   </t:zone>
 </body>
