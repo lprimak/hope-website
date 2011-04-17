@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd">
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"
+	  xmlns:p="tapestry:parameter">
 <head>
 <meta charset="UTF-8"/>
 <title>Erase Junk Mail</title>
 </head>
 <body>
-  <h1>Press <button t:type="chenillekit/button" t:id="eraseJunkMail" accesskey="J">Erase</button> to Erase Junk E-Mail</h1>
-  <h3>Junk Status: ${junkMailErased}</h3>
+  <form t:type="form" zone="junkStatus">
+	<h1>Press <input t:type="submit" value="Here" event="erase"/> to Erase Junk Email</h1>
+  </form>
+  <t:zone t:id="junkStatus" id="junkStatus" update="colorhighlight" t:mixins="ColorHighlight" color='#5AACFD'>
+    <h3>Junk Status: ${junkMailErased}</h3>
+  </t:zone>
 </body>
 </html>
