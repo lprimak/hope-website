@@ -9,7 +9,7 @@
 <body>
   <form t:type="form" zone="junkStatus">
 	<h1>Press 
-	<button t:type="submit" value="Here" event="erase" t:mixins="DisableAfterSubmit" zone="junkStatus">
+	<button t:type="submit" value="Here" event="erase" t:mixins="DisableAfterSubmit">
 	  <t:remove>Here</t:remove>
 	</button>
 	to Erase Junk Email</h1>
