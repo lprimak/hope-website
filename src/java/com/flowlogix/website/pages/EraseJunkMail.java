@@ -63,6 +63,14 @@ public class EraseJunkMail
     	}
     	return junkStatus.getBody();
     }
+    
+    
+    @OnEvent(value="updatestatus")
+    private Block updateJunkStatus()
+    {
+        init();
+        return junkStatus.getBody();
+    }
 
     
     @Getter private String junkMailErased;    
