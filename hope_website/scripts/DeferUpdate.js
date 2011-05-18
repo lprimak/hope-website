@@ -12,9 +12,14 @@ DeferUpdate.prototype = {
 		},
 		
 		doDefer: function() {
-                    $T(this.zoneId).PeriodicUpdater.stop();
-                    $T(this.zoneId).PeriodicUpdater.start(true);
-                    $(this.zoneId).stopObserving(Tapestry.ZONE_UPDATED_EVENT, 
-                                                 this.handler);
+                    if($T(this.zoneId).PeriodicUpdater.updateTriggered == false)
+                    {
+                        $T(this.zoneId).PeriodicUpdater.stop();
+                        $T(this.zoneId).PeriodicUpdater.start(true);                            
+                    }
+                    else
+                    {
+                        $T(this.zoneId).PeriodicUpdater.updateTriggered = false;
+                    }
 		}
 }

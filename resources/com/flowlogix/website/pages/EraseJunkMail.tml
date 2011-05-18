@@ -15,7 +15,7 @@
 	to Erase Junk Email</h1>
   </form>
   <t:zone t:id="junkStatus" update="colorhighlight" t:mixins="ColorHighlight, PeriodicUpdater"
-   event="updateStatus" period="2" color='#5AACFD'>
+   event="updateStatus" period="180" color='#5AACFD'>
     <h3>Junk Status: ${junkMailErased}</h3>
   </t:zone>
 </body>
