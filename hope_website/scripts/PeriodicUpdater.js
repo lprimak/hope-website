@@ -8,7 +8,8 @@ Tapestry.PeriodicUpdater = Class.create({
         this.element = element;
         this.url = url; 
         this.once = false;  
-        this.updateTriggered = false;
+        
+        this.numUpdates = 0;
     },
  
     start: function(once) {
@@ -42,7 +43,7 @@ Tapestry.PeriodicUpdater = Class.create({
  
         if (!zoneObject) return;
  
-        this.updateTriggered = true;
+        ++this.numUpdates;
         zoneObject.updateFromURL(this.url);
  
         (this.onUpdate || Prototype.emptyFunction).apply(this, arguments);
