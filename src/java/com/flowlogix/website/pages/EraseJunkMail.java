@@ -42,6 +42,7 @@ public class EraseJunkMail
     }
     
     
+    @SuppressWarnings("unused")
     @OnEvent(value="updatestatus", component="junkStatus")
     private Block updateJunkStatus()
     {
