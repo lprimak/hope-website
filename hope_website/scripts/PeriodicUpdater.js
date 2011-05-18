@@ -6,12 +6,14 @@ Tapestry.PeriodicUpdater = Class.create({
     initialize: function(element, url, period) {      
         this.period = period; 
         this.element = element;
-        this.url = url;
- 
-        this.start();
+        this.url = url; 
+        this.once = false;        
     },
  
-    start: function() {
+    start: function(once) {
+        if(once == true)
+            this.once = once;
+        
         this.onUpdate = this.updateComplete.bind(this);
         this.timer = this.onTimerEvent.bind(this).delay(this.period);
     },
@@ -22,7 +24,15 @@ Tapestry.PeriodicUpdater = Class.create({
     },
  
     updateComplete: function() {
-        this.timer = this.onTimerEvent.bind(this).delay(this.period);
+        if(this.once == false)
+        {
+            this.timer = this.onTimerEvent.bind(this).delay(this.period);                
+        }
+        else
+        {
+            this.timer = undefined;
+            this.onUpdate = undefined;
+        }
     },
  
     onTimerEvent: function() {
@@ -36,12 +46,12 @@ Tapestry.PeriodicUpdater = Class.create({
     }
 });
  
-Tapestry.Initializer.periodicupdater = function(spec)
+Tapestry.Initializer.PeriodicUpdater = function(spec)
 {
     var elementId = spec.elementId;
     var uri = spec.uri;
     var period = spec.period;
     
-    $T(elementId).periodicupdater = new Tapestry.PeriodicUpdater(elementId, uri, period);
+    $T(elementId).PeriodicUpdater = new Tapestry.PeriodicUpdater(elementId, uri, period);
 };
 

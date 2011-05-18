@@ -12,7 +12,7 @@ DisableAfterSubmit.prototype = {
 					this.doDisable.bindAsEventListener(this));			
 		},
 
-		doDisable: function(e) {
+		doDisable: function() {
 			$(this.elementId).disable();
 			if(this.zoneId == null) {	
 				this.zoneId = Tapestry.findZoneManager(this.formId).element;
@@ -23,7 +23,7 @@ DisableAfterSubmit.prototype = {
 			$(this.formId).onsubmit();
 		},
 		
-		doEnable: function(e) {
+		doEnable: function() {
 			$(this.elementId).enable();
 		}
 };

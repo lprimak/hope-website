@@ -15,8 +15,13 @@ import org.apache.tapestry5.annotations.SetupRender;
 import org.apache.tapestry5.corelib.components.Zone;
 
 import com.flowlogix.website.JunkMailEraser;
+import org.apache.tapestry5.annotations.AfterRender;
+import org.apache.tapestry5.annotations.Environmental;
+import org.apache.tapestry5.annotations.Import;
+import org.apache.tapestry5.services.javascript.JavaScriptSupport;
 
 @Secure
+@Import(library="context:scripts/DeferUpdate.js")
 public class EraseJunkMail
 {
 	@SneakyThrows(NamingException.class)
@@ -65,15 +70,23 @@ public class EraseJunkMail
     }
     
     
-    @OnEvent(value="updatestatus")
+    @OnEvent(value="updatestatus", component="junkStatus")
     private Block updateJunkStatus()
     {
         init();
         return junkStatus.getBody();
+    }
+    
+    
+    @AfterRender
+    void addStatusReset()
+    {
+        js.addScript("new DeferUpdate('%s');", junkStatus.getClientId());
     }
 
     
     @Getter private String junkMailErased;    
     private final JunkMailEraser eraser;
     @InjectComponent private Zone junkStatus;
+    private @Environmental JavaScriptSupport js;
 }
