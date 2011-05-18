@@ -16,7 +16,7 @@
   </form>
   <t:zone t:id="junkStatus" update="colorhighlight" 
           t:mixins="ColorHighlight, PeriodicUpdater, DeferZoneUpdate"
-          event="updateStatus" period="15" color='#5AACFD'>
+          event="updateStatus" period="8" color='#5AACFD'>
     <h3>Junk Status: ${junkMailErased}</h3>
   </t:zone>
 </body>
