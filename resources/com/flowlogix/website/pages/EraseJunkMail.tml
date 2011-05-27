@@ -2,7 +2,6 @@
 <html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"
 	  xmlns:p="tapestry:parameter">
 <head>
-<meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <title>Erase Junk Mail</title>
 </head>
@@ -16,7 +15,7 @@
   </form>
   <t:zone t:id="junkStatus" update="colorhighlight" 
           t:mixins="ColorHighlight, PeriodicUpdater, DeferZoneUpdate"
-          event="updateStatus" period="8" color='#5AACFD'>
+          event="updateStatus" period="5" color='#5AACFD'>
     <h3>Junk Status: ${junkMailErased}</h3>
   </t:zone>
 </body>

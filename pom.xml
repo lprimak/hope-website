@@ -39,35 +39,35 @@
         <dependency>
         	<groupId>org.apache.tapestry</groupId>
         	<artifactId>tapestry5-annotations</artifactId>
-        	<version>5.2.4</version>
+        	<version>5.2.5</version>
         	<type>jar</type>
         	<scope>provided</scope>
         </dependency>
         <dependency>
         	<groupId>org.apache.tapestry</groupId>
         	<artifactId>tapestry-ioc</artifactId>
-        	<version>5.2.4</version>
+        	<version>5.2.5</version>
         	<type>jar</type>
         	<scope>provided</scope>
         </dependency>
         <dependency>
         	<groupId>org.apache.tapestry</groupId>
         	<artifactId>tapestry-core</artifactId>
-        	<version>5.2.4</version>
+        	<version>5.2.5</version>
         	<type>jar</type>
         	<scope>provided</scope>
         </dependency>
         <dependency>
         	<groupId>org.apache.tapestry</groupId>
         	<artifactId>tapestry-func</artifactId>
-        	<version>5.2.4</version>
+        	<version>5.2.5</version>
         	<type>jar</type>
         	<scope>provided</scope>
         </dependency>
         <dependency>
         	<groupId>org.apache.tapestry</groupId>
         	<artifactId>tapestry-json</artifactId>
-        	<version>5.2.4</version>
+        	<version>5.2.5</version>
         	<type>jar</type>
         	<scope>provided</scope>
         </dependency>
