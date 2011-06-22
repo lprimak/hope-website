@@ -1,0 +1,40 @@
+  <!--
+  To change this template, choose Tools | Templates
+  and open the template in the editor.
+  -->
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  <html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"
+        xmlns:p="tapestry:parameter">
+      <head>
+          <title>Data Grid</title>
+          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      </head>
+      <body>
+          <div>
+            <p>Web Statistics</p>
+          </div>
+          <table t:type="grid" border="1" source="WebStats">
+          <t:remove>
+            <tr>
+              <th scope="col"><p>Date</p></th>
+              <th scope="col">Statistics Name</th>
+              <th scope="col">Number of Tracks</th>
+              <th scope="col"><p>Number of Visits</p></th>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            </t:remove>
+          </table>
+      </body>
+  </html>

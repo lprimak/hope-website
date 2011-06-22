@@ -6,6 +6,7 @@ import org.apache.tapestry5.ioc.Configuration;
 import org.apache.tapestry5.ioc.MappedConfiguration;
 import org.apache.tapestry5.ioc.ServiceBinder;
 import org.apache.tapestry5.ioc.annotations.SubModule;
+import org.tynamo.jpa.JPASymbols;
 import org.tynamo.shiro.extension.realm.text.ExtendedPropertiesRealm;
 
 @SubModule(EjbModule.class)
@@ -26,6 +27,7 @@ public class HopeModule
     {
         configuration.add(SymbolConstants.PRODUCTION_MODE, "false");
         configuration.add(SymbolConstants.SECURE_ENABLED, System.getProperty("hope.secure_enabled", "false"));
+        configuration.add(JPASymbols.PERSISTENCE_UNIT, "hopePU");
     }
     
     
