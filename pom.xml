@@ -54,14 +54,16 @@
         <finalName>hope_website</finalName>
         <sourceDirectory>src/java</sourceDirectory>
         <testSourceDirectory>src/test/java</testSourceDirectory>
-        <resource>
-            <directory>resources/tapestry</directory>
-            <filtering>false</filtering>
-        </resource>
-        <resource>
-            <directory>resources/main</directory>
-            <filtering>true</filtering>
-        </resource>
+        <resources>
+            <resource>
+                <directory>resources/tapestry</directory>
+                <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>resources/main</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
     </build>
     
     <repositories>
