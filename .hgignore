@@ -1,5 +1,8 @@
+syntax: regexp
 
-syntax: regexp
 ^target$
-syntax: regexp
-^target$
+\.orig\..*$
+\.orig$
+\.chg\..*$
+\.rej$
+\.conflict\~$
