@@ -4,10 +4,12 @@
  */
 package com.flowlogix.website.pages;
 
-import com.flowlogix.website.WebStats;
-import java.util.ArrayList;
+import com.flowlogix.website.entities.WebStats;
 import java.util.List;
+import javax.persistence.EntityManager;
 import lombok.Getter;
+import org.apache.tapestry5.annotations.SetupRender;
+import org.apache.tapestry5.ioc.annotations.Inject;
 
 /**
  *
@@ -15,5 +17,13 @@ import lombok.Getter;
  */
 public class DbTable
 {
-    @Getter private List<WebStats> webStats = new ArrayList<WebStats>();
+    @SetupRender
+    private void populate()
+    {
+        webStats = em.createNamedQuery("WebStats.findAll", WebStats.class).getResultList();
+    }
+    
+    
+    @Inject private EntityManager em;
+    @Getter private List<WebStats> webStats;
 }

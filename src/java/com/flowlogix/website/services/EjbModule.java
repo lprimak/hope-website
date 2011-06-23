@@ -6,7 +6,9 @@ import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import lombok.SneakyThrows;
+import org.apache.tapestry5.ioc.MappedConfiguration;
 import org.apache.tapestry5.ioc.annotations.InjectService;
+import org.tynamo.jpa.JPASymbols;
 
 /**
  * Integrate EJB3 Beans into the Web site
@@ -15,6 +17,12 @@ import org.apache.tapestry5.ioc.annotations.InjectService;
  */
 public class EjbModule
 {
+    public static void contributeApplicationDefaults(MappedConfiguration<String, String> configuration)
+    {
+        configuration.add(JPASymbols.PERSISTENCE_UNIT, hopePU);
+    }
+
+    
     @SneakyThrows(NamingException.class)
     public static Context buildEjbContext()
     {
@@ -38,4 +46,10 @@ public class EjbModule
         }
         return eraser;
     }
+    
+    
+    private static final String dbProdSuffix =
+            System.getProperty("com.baw.website.dbProdSuffix", "Test");
+    
+    private static final String hopePU = "HopePU" + dbProdSuffix;
 }
