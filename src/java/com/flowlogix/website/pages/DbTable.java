@@ -17,6 +17,7 @@ import org.apache.tapestry5.ioc.annotations.Inject;
  */
 public class DbTable
 {
+    @SuppressWarnings("unused")
     @SetupRender
     private void populate()
     {

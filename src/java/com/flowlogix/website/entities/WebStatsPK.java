@@ -20,6 +20,10 @@ import lombok.Data;
 @Data
 public class WebStatsPK implements Serializable
 {
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
     @Basic(optional = false)
     @NotNull
     @Size(min = 1, max = 8)
