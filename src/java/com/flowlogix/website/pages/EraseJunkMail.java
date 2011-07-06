@@ -58,7 +58,6 @@ public class EraseJunkMail
     @OnEvent(value="updatestatus", component="junkStatus")
     private Block updateJunkStatus()
     {
-        junkMailErased = null;
         init();
         return junkStatus.getBody();
     }
