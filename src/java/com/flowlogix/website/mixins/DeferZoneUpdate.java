@@ -18,10 +18,10 @@ public class DeferZoneUpdate
     @AfterRender
     void addStatusReset()
     {
-        js.addScript("new DeferUpdate('%s');", junkStatus.getClientId());
+        js.addScript("new DeferUpdate('%s');", container.getClientId());
     }
     
     
-    @InjectContainer private ClientElement junkStatus;
+    @InjectContainer private ClientElement container;
     private @Environmental JavaScriptSupport js;
 }

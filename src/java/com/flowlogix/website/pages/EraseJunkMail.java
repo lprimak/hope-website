@@ -6,16 +6,20 @@ import org.apache.tapestry5.Block;
 import org.apache.tapestry5.annotations.InjectComponent;
 import org.apache.tapestry5.annotations.OnEvent;
 import org.apache.tapestry5.annotations.Secure;
-import org.apache.tapestry5.annotations.SetupRender;
 import org.apache.tapestry5.corelib.components.Zone;
 
 import com.flowlogix.website.JunkMailEraser;
+import org.apache.tapestry5.ComponentResources;
+import org.apache.tapestry5.annotations.PageAttached;
+import org.apache.tapestry5.annotations.Persist;
 import org.apache.tapestry5.ioc.annotations.Inject;
+import org.apache.tapestry5.services.Request;
+
 
 @Secure
 public class EraseJunkMail
 {
-    @SetupRender
+    @PageAttached
     void init()
     {
         if(junkMailErased == null)
@@ -27,7 +31,7 @@ public class EraseJunkMail
 	
     @SuppressWarnings("unused")
     @OnEvent(value="erase")
-    private Block eraseJunkMail()
+    private Object eraseJunkMail()
     {    	
     	eraser.erase();
     	if(eraser.isMock())
@@ -38,7 +42,15 @@ public class EraseJunkMail
     	{
     		junkMailErased = "Erased!";
     	}
-    	return junkStatus.getBody();
+        if(request.isXHR())
+        {
+            cr.discardPersistentFieldChanges();
+            return junkStatus.getBody();
+        }
+        else
+        {
+            return this;
+        }
     }
     
     
@@ -46,12 +58,15 @@ public class EraseJunkMail
     @OnEvent(value="updatestatus", component="junkStatus")
     private Block updateJunkStatus()
     {
+        junkMailErased = null;
         init();
         return junkStatus.getBody();
     }
    
     
-    @Getter private String junkMailErased;  
+    @Getter @Persist("flash") private String junkMailErased;  
     @Inject private JunkMailEraser eraser;
     @InjectComponent private Zone junkStatus;
+    @Inject private Request request;
+    @Inject private ComponentResources cr;
 }
