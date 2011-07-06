@@ -52,16 +52,14 @@
             </plugin>
         </plugins>
         <finalName>hope_website</finalName>
-        <sourceDirectory>src/java</sourceDirectory>
-        <testSourceDirectory>src/test/java</testSourceDirectory>
         <resources>
             <resource>
-                <directory>resources/tapestry</directory>
-                <filtering>false</filtering>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
             </resource>
             <resource>
-                <directory>resources/main</directory>
-                <filtering>true</filtering>
+                <directory>src/main/tml</directory>
+                <filtering>false</filtering>
             </resource>
         </resources>
     </build>
