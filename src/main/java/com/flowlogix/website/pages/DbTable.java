@@ -8,7 +8,7 @@ import com.flowlogix.website.entities.WebStats;
 import java.util.List;
 import javax.persistence.EntityManager;
 import lombok.Getter;
-import org.apache.tapestry5.annotations.SetupRender;
+import org.apache.tapestry5.annotations.PageAttached;
 import org.apache.tapestry5.ioc.annotations.Inject;
 
 /**
@@ -18,7 +18,7 @@ import org.apache.tapestry5.ioc.annotations.Inject;
 public class DbTable
 {
     @SuppressWarnings("unused")
-    @SetupRender
+    @PageAttached
     private void populate()
     {
         webStats = em.createNamedQuery("WebStats.findAll", WebStats.class).getResultList();
