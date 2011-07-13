@@ -14,7 +14,7 @@
           <div>
             <p>Web Statistics</p>
           </div>
-          <table t:type="grid" border="1" source="WebStats">
+          <table t:type="grid" border="1" source="WebStats" inPlace="true">
           <t:remove>
             <tr>
               <th scope="col"><p>Date</p></th>
