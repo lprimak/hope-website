@@ -10,8 +10,8 @@ import org.apache.tapestry5.corelib.components.Zone;
 
 import com.flowlogix.website.JunkMailEraser;
 import org.apache.tapestry5.ComponentResources;
-import org.apache.tapestry5.annotations.PageAttached;
 import org.apache.tapestry5.annotations.Persist;
+import org.apache.tapestry5.annotations.SetupRender;
 import org.apache.tapestry5.ioc.annotations.Inject;
 import org.apache.tapestry5.services.Request;
 
@@ -19,7 +19,7 @@ import org.apache.tapestry5.services.Request;
 @Secure
 public class EraseJunkMail
 {
-    @PageAttached
+    @SetupRender
     void init()
     {
         if(junkMailErased == null)
