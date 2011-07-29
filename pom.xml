@@ -22,23 +22,6 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.chenillekit</groupId>
-            <artifactId>chenillekit-core</artifactId>
-            <version>1.3.2</version>
-            <type>jar</type>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.chenillekit</groupId>
-            <artifactId>chenillekit-tapestry</artifactId>
-            <version>1.3.2</version>
-            <type>jar</type>
-            <scope>provided</scope>
-        </dependency>
-    </dependencies>
-
     <build>
         <plugins>
             <plugin>
