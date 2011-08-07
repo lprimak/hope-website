@@ -6,7 +6,7 @@ var DeferUpdate = Class.create();
 DeferUpdate.prototype = {
 		initialize: function(zoneId) {
                     this.zoneId = zoneId;
-                    this.handler = this.doDefer.bindAsEventListener(this)
+                    this.handler = this.doDefer.bindAsEventListener(this);
 			Event.observe($(zoneId), Tapestry.ZONE_UPDATED_EVENT,
     					this.handler);
 		},
@@ -22,4 +22,4 @@ DeferUpdate.prototype = {
                         $T(this.zoneId).PeriodicUpdater.numUpdates = 0;
                     }
 		}
-}
+};
