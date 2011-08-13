@@ -13,10 +13,12 @@ import javax.mail.Store;
 
 import com.flowlogix.website.JunkMailEraser;
 
+import javax.ejb.Local;
 import lombok.Cleanup;
 import lombok.SneakyThrows;
 
 @Stateless(name = "JunkMailEraser")
+@Local(JunkMailEraser.class)
 public class JunkMailEraserImpl implements JunkMailEraser
 {
 	@SneakyThrows({ MessagingException.class })
