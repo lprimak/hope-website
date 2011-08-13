@@ -27,6 +27,7 @@ public class EjbModule
     public static JunkMailEraser buildJunkMailEraser(@InjectService("EjbContext") Context ic)
     {
         final String eraserName = "java:module/" + JunkMailEraser.NAME;
+        log.fine("Using Eraser Module: " + eraserName);
         JunkMailEraser eraser = (JunkMailEraser) ic.lookup(eraserName);
         try
         {
