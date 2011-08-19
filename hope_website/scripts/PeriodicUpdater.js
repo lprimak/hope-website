@@ -56,6 +56,6 @@ Tapestry.Initializer.PeriodicUpdater = function(spec)
     var uri = spec.uri;
     var period = spec.period;
     
-    $T(elementId).PeriodicUpdater = new Tapestry.PeriodicUpdater(elementId, uri, period);
+    $(elementId).PeriodicUpdater = new Tapestry.PeriodicUpdater(elementId, uri, period);
 };
 
