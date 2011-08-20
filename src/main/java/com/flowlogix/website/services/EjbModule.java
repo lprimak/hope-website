@@ -1,6 +1,7 @@
 package com.flowlogix.website.services;
 
-import com.flowlogix.website.JunkMailEraser;
+import com.flowlogix.website.JunkMailEraserLocal;
+import com.flowlogix.website.impl.JunkMailEraserImpl;
 import java.util.logging.Logger;
 import javax.ejb.EJBException;
 import javax.naming.Context;
@@ -24,11 +25,11 @@ public class EjbModule
     
 
     @SneakyThrows(NamingException.class)    
-    public static JunkMailEraser buildJunkMailEraser(@InjectService("EjbContext") Context ic)
+    public static JunkMailEraserLocal buildJunkMailEraser(@InjectService("EjbContext") Context ic)
     {
-        final String eraserName = "java:module/" + JunkMailEraser.NAME;
+        final String eraserName = "java:module/" + JunkMailEraserImpl.class.getSimpleName();
         log.fine("Using Eraser Module: " + eraserName);
-        JunkMailEraser eraser = (JunkMailEraser) ic.lookup(eraserName);
+        JunkMailEraserLocal eraser = (JunkMailEraserLocal) ic.lookup(eraserName);
         try
         {
             // call any method to actually test the bean
@@ -36,7 +37,7 @@ public class EjbModule
         }
         catch (EJBException e)
         {
-            eraser = (JunkMailEraser) ic.lookup(eraserName + "Mock");
+            eraser = (JunkMailEraserLocal) ic.lookup(eraserName.replaceFirst("Impl", "Mock"));
         }
         return eraser;
     }
