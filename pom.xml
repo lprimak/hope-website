@@ -53,5 +53,12 @@
             <url>http://bawweb:8088/repo</url>
         </repository>
     </repositories>
-
+    
+    <dependencies>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>flowlogix-services</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 </project>
