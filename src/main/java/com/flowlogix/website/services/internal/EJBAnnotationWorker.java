@@ -4,10 +4,9 @@
  * Copyright 2009 by Movellas ApS
  * All rights reserved. 
  */
-package com.flowlogix.website.services.ejb.internal;
+package com.flowlogix.website.services.internal;
 
-import com.flowlogix.website.services.ejb.EJB;
-import com.flowlogix.website.services.internal.JNDIObjectLocator;
+import javax.ejb.EJB;
 import javax.naming.NamingException;
 
 import lombok.SneakyThrows;
@@ -40,9 +39,13 @@ public class EJBAnnotationWorker implements ComponentClassTransformWorker2
             {
                 lookupname = annotation.lookup();
             } //try name
-            else if (!isBlankOrNull(annotation.name()))
+            else if(!isBlankOrNull(annotation.name()))
             {
                 lookupname = annotation.name();
+            }
+            else if(!isBlankOrNull(annotation.beanName()))
+            {
+                lookupname = annotation.beanName();
             }
 
             //use type

@@ -1,6 +1,6 @@
 package com.flowlogix.website.services;
 
-import com.flowlogix.website.services.ejb.internal.EJBAnnotationWorker;
+import com.flowlogix.website.services.internal.EJBAnnotationWorker;
 import org.apache.tapestry5.ioc.OrderedConfiguration;
 import org.apache.tapestry5.ioc.annotations.Contribute;
 import org.apache.tapestry5.services.transform.ComponentClassTransformWorker2;
