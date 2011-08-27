@@ -1,5 +1,6 @@
 package com.flowlogix.website.services;
 
+import com.flowlogix.services.EjbModule;
 import org.apache.shiro.realm.Realm;
 import org.apache.tapestry5.SymbolConstants;
 import org.apache.tapestry5.ioc.Configuration;

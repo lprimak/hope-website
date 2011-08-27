@@ -17,7 +17,7 @@
     </properties>
     
     <parent>
-        <groupId>com.bettaway</groupId>
+        <groupId>com.flowlogix</groupId>
         <artifactId>build-core</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
