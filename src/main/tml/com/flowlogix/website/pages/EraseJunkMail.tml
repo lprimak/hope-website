@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"
-	  xmlns:p="tapestry:parameter">
+	  xmlns:p="tapestry:parameter" xmlns:f="tapestry-library:flowlogix">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <title>Erase Junk Mail</title>
@@ -8,13 +8,13 @@
 <body>
   <form t:type="form" zone="junkStatus">
 	<h1>Press 
-	<button t:type="submit" value="Here" event="erase" t:mixins="DisableAfterSubmit">
+	<button t:type="submit" value="Here" event="erase" t:mixins="flowlogix/DisableAfterSubmit">
 	  <t:remove>Here</t:remove>
 	</button>
 	to Erase Junk Email</h1>
   </form>
   <t:zone t:id="junkStatus" update="colorhighlight" 
-          t:mixins="ColorHighlight, PeriodicUpdater, DeferZoneUpdate"
+          t:mixins="flowlogix/ColorHighlight, flowlogix/PeriodicUpdater, flowlogix/DeferZoneUpdate"
           event="updateStatus" period="5" color='#5AACFD'>
     <h3>Junk Status: ${junkMailErased}</h3>
   </t:zone>

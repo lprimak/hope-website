@@ -1,16 +1,13 @@
 package com.flowlogix.website.services;
 
-import com.flowlogix.services.EjbModule;
 import org.apache.shiro.realm.Realm;
 import org.apache.tapestry5.SymbolConstants;
 import org.apache.tapestry5.ioc.Configuration;
 import org.apache.tapestry5.ioc.MappedConfiguration;
 import org.apache.tapestry5.ioc.ServiceBinder;
-import org.apache.tapestry5.ioc.annotations.SubModule;
 import org.tynamo.shiro.extension.realm.text.ExtendedPropertiesRealm;
 
 
-@SubModule(EjbModule.class)
 public class HopeModule
 {
     public static void bind(ServiceBinder binder)
