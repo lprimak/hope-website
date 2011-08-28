@@ -50,7 +50,7 @@ public class EraseJunkMail
 	
     @SuppressWarnings("unused")
     @OnEvent(value = "erase")
-    @AJAX
+    @AJAX(discardAfter = true)
     private Object eraseJunkMail()
     {
         eraser.erase();
