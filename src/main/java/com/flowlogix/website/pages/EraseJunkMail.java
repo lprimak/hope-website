@@ -1,5 +1,6 @@
 package com.flowlogix.website.pages;
 
+import com.flowlogix.web.services.annotations.AJAX;
 import lombok.Getter;
 
 import org.apache.tapestry5.Block;
@@ -48,29 +49,22 @@ public class EraseJunkMail
 	
 	
     @SuppressWarnings("unused")
-    @OnEvent(value="erase")
+    @OnEvent(value = "erase")
+    @AJAX
     private Object eraseJunkMail()
-    {    	
-    	eraser.erase();
-    	if(eraser.isMock())
-    	{
-    		junkMailErased = "Erased Mock!";
-    	}
-    	else
-    	{
-    		junkMailErased = "Erased!";
-    	}
-        if(request.isXHR())
+    {
+        eraser.erase();
+        if (eraser.isMock())
         {
-            cr.discardPersistentFieldChanges();
-            return junkStatus.getBody();
-        }
+            junkMailErased = "Erased Mock!";
+        } 
         else
         {
-            return this;
+            junkMailErased = "Erased!";
         }
+        return junkStatus.getBody();
     }
-    
+
     
     @SuppressWarnings("unused")
     @OnEvent(value="updatestatus", component="junkStatus")
