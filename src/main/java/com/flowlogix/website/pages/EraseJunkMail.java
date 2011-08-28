@@ -12,6 +12,7 @@ import com.flowlogix.website.JunkMailEraserLocal;
 import javax.ejb.EJB;
 import javax.ejb.EJBException;
 import org.apache.tapestry5.ComponentResources;
+import org.apache.tapestry5.PersistenceConstants;
 import org.apache.tapestry5.annotations.Persist;
 import org.apache.tapestry5.annotations.SetupRender;
 import org.apache.tapestry5.ioc.annotations.Inject;
@@ -80,7 +81,7 @@ public class EraseJunkMail
     }
    
     
-    @Getter @Persist("flash") private String junkMailErased;  
+    @Getter @Persist(PersistenceConstants.FLASH) private String junkMailErased;  
     @EJB(beanName = "JunkMailEraserImpl") private JunkMailEraserLocal eraserImpl;
     @EJB(beanName = "JunkMailEraserMock") private JunkMailEraserLocal eraserMock;
     private final JunkMailEraserLocal eraser;
