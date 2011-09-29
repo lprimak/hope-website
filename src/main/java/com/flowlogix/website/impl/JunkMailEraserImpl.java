@@ -13,9 +13,11 @@ import javax.mail.Store;
 
 import com.flowlogix.website.JunkMailEraserLocal;
 
+import com.flowlogix.website.services.security.UserAuth;
 import javax.ejb.Local;
 import lombok.Cleanup;
 import lombok.SneakyThrows;
+import org.apache.shiro.SecurityUtils;
 
 @Stateless
 @Local(JunkMailEraserLocal.class)
@@ -27,7 +29,8 @@ public class JunkMailEraserImpl implements JunkMailEraserLocal
     {
         @Cleanup Store store = mailSession.getStore();
         log.fine(mailSession.getProperties().toString());
-        store.connect(mailSession.getProperty("mail.user"), mailSession.getProperty("mail.password"));
+        UserAuth user = (UserAuth)SecurityUtils.getSubject().getPrincipal();
+        store.connect(user.getUserName(), user.getPassword());
         Folder junkFolder = store.getFolder("Junk");
         junkFolder.open(Folder.READ_WRITE);
         Message[] messages = junkFolder.getMessages();
