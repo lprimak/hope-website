@@ -24,7 +24,6 @@ public class HopeModule
     public static void contributeApplicationDefaults(MappedConfiguration<String, String> configuration)
     {
         configuration.add(SymbolConstants.PRODUCTION_MODE, "false");
-        configuration.add(SymbolConstants.SECURE_ENABLED, "false");
     }
     
     
