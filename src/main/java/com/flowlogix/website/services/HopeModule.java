@@ -40,6 +40,7 @@ public class HopeModule
     public void setFactoryDefaults(MappedConfiguration<String, String> configuration)
     {
         configuration.add(PAM_AUTH_SERVICE_NAME, "pwauth");
+        configuration.add(JUNK_FOLDER_NAME, "Junk");
     }
     
     
@@ -52,4 +53,5 @@ public class HopeModule
     
     
     public static final String PAM_AUTH_SERVICE_NAME = "com.flowlogix.pam-service-name";
+    public static final String JUNK_FOLDER_NAME = "com.flowlogix.junk-folder-name";
 }

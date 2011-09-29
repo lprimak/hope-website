@@ -9,7 +9,7 @@ import com.flowlogix.website.JunkMailEraserLocal;
 public class JunkMailEraserMock implements JunkMailEraserLocal
 {
     @Override
-    public void erase()
+    public void erase(String folderName)
     {
         // just a fake test
     }

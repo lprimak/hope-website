@@ -10,6 +10,7 @@ import org.apache.tapestry5.annotations.Secure;
 import org.apache.tapestry5.corelib.components.Zone;
 
 import com.flowlogix.website.JunkMailEraserLocal;
+import com.flowlogix.website.services.HopeModule;
 import javax.ejb.EJB;
 import javax.ejb.EJBException;
 import org.apache.shiro.SecurityUtils;
@@ -19,6 +20,7 @@ import org.apache.tapestry5.PersistenceConstants;
 import org.apache.tapestry5.annotations.Persist;
 import org.apache.tapestry5.annotations.SetupRender;
 import org.apache.tapestry5.ioc.annotations.Inject;
+import org.apache.tapestry5.ioc.annotations.Symbol;
 import org.apache.tapestry5.services.Request;
 
 
@@ -56,7 +58,7 @@ public class EraseJunkMail
     @AJAX(discardAfter = true, requireSession = false)
     private Object eraseJunkMail()
     {
-        eraser.erase();
+        eraser.erase(junkFolderName);
         if (eraser.isMock())
         {
             junkMailErased = "Erased Mock!";
@@ -92,4 +94,5 @@ public class EraseJunkMail
     @InjectComponent private Zone junkStatus;
     @Inject private Request request;
     @Inject private ComponentResources cr;
+    private @Inject @Symbol(HopeModule.JUNK_FOLDER_NAME) String junkFolderName;
 }

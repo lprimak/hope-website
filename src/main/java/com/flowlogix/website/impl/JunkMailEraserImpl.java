@@ -25,13 +25,13 @@ public class JunkMailEraserImpl implements JunkMailEraserLocal
 {
     @SneakyThrows(MessagingException.class)
     @Override
-    public void erase()
+    public void erase(String folderName)
     {
         @Cleanup Store store = mailSession.getStore();
         log.fine(mailSession.getProperties().toString());
         UserAuth user = (UserAuth)SecurityUtils.getSubject().getPrincipal();
         store.connect(user.getUserName(), user.getPassword());
-        Folder junkFolder = store.getFolder("Junk");
+        Folder junkFolder = store.getFolder(folderName);
         junkFolder.open(Folder.READ_WRITE);
         Message[] messages = junkFolder.getMessages();
         for (Message msg : messages)
