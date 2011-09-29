@@ -94,11 +94,7 @@ public class UnixRealm extends AuthorizingRealm
 
         for (UserAuth userPrincipal : principalsList)
         {
-            Set<String> userRoles = userPrincipal.getRoles();
-            for (String r : userRoles)
-            {
-                roles.add(r);
-            }
+            roles.addAll(userPrincipal.getRoles());
         }
         SimpleAuthorizationInfo info = new SimpleAuthorizationInfo(roles);
         info.setRoles(roles); 
