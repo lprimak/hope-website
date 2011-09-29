@@ -19,7 +19,7 @@
     <parent>
         <groupId>com.flowlogix</groupId>
         <artifactId>build-core</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>0.5</version>
     </parent>
 
     <build>
@@ -58,7 +58,7 @@
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>flowlogix-services</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>0.5</version>
         </dependency>
         <dependency>
             <groupId>org.jvnet.libpam4j</groupId>
