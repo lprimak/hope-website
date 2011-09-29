@@ -12,6 +12,7 @@ import org.apache.tapestry5.corelib.components.Zone;
 import com.flowlogix.website.JunkMailEraserLocal;
 import javax.ejb.EJB;
 import javax.ejb.EJBException;
+import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.apache.tapestry5.ComponentResources;
 import org.apache.tapestry5.PersistenceConstants;
@@ -74,6 +75,13 @@ public class EraseJunkMail
     {
         init();
         return junkStatus.getBody();
+    }
+    
+    
+    @OnEvent(value = "logout")
+    private void logout()
+    {
+        SecurityUtils.getSubject().logout();
     }
    
     

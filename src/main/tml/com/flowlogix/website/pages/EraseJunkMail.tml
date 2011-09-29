@@ -18,5 +18,9 @@
           event="updateStatus" period="5" color='#5AACFD'>
     <h3>Junk Status: ${junkMailErased}</h3>
   </t:zone>
+  <form t:type="form">
+	<button t:type="submit" value="Log Out" event="logout">
+        </button>
+  </form>
 </body>
 </html>

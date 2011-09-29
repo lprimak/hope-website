@@ -61,6 +61,7 @@ public class UnixRealm extends AuthorizingRealm
 
     
     @Override
+    @SneakyThrows(InterruptedException.class)
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException
     {
         final UsernamePasswordToken upToken = (UsernamePasswordToken)token;
@@ -71,6 +72,7 @@ public class UnixRealm extends AuthorizingRealm
             unixUser = getPam().authenticate(upToken.getUsername(), password);
         } catch (PAMException ex)
         {
+            Thread.sleep(3000);  // no dictionary attacks!
             throw new AuthenticationException(ex);
         }
         return new SimpleAuthenticationInfo(new UserAuth(unixUser.getUserName(), password, unixUser.getGroups()), upToken.getPassword(), getName());
