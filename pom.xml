@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.flowlogix</groupId>
-    <artifactId>hope_website</artifactId>
+    <artifactId>hope-website</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
 
@@ -29,7 +29,7 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>2.1.1</version>
                 <configuration>
-                    <warSourceDirectory>${basedir}/hope_website</warSourceDirectory>
+                    <warSourceDirectory>${basedir}/hope-website</warSourceDirectory>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
