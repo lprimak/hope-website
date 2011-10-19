@@ -56,7 +56,7 @@ public class EraseJunkMail
     @SuppressWarnings("unused")
     @OnEvent(value = "erase")
     @AJAX(discardAfter = true, requireSession = false)
-    private Object eraseJunkMail()
+    private Block eraseJunkMail()
     {
         eraser.erase(junkFolderName);
         if (eraser.isMock())
