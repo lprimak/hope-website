@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+	  xmlns:p="tapestry:parameter" xmlns:f="tapestry-library:flowlogix">
+<head>
+<title>Test Date Field</title>
+</head>
+<body>
+  <form t:type="form">
+      <input t:type="datefield" value="birthday"/>
+  </form>
+  <br/>
+  <t:grid source="birthdays" include="fullname,dob"/>
+</body>
+</html>
