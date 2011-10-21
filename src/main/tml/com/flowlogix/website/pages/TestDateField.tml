@@ -5,9 +5,12 @@
 <title>Test Date Field</title>
 </head>
 <body>
-  <form t:type="form">
+<t:zone t:id="birthdayZone" update="colorhighlight" t:mixins="flowlogix/ColorHighlight" color='#5AACFD'>
+  <form t:type="form" zone="birthdayZone">
       <input t:type="datefield" value="birthday"/>
+      <input t:type="submit" type="button" value="Submit"/>
   </form>
+</t:zone>
   <br/>
   <t:grid source="birthdays" include="fullname,dob"/>
 </body>
