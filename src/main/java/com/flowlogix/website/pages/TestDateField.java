@@ -5,6 +5,7 @@
 package com.flowlogix.website.pages;
 
 import com.flowlogix.web.mixins.ColorHighlightOverride;
+import com.flowlogix.web.mixins.SessionTracker;
 import com.flowlogix.web.services.annotations.AJAX;
 import com.flowlogix.website.entities.Sample;
 import java.util.List;
@@ -12,7 +13,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.validation.constraints.NotNull;
 import lombok.Getter;
-import lombok.Setter;
 import org.apache.tapestry5.BindingConstants;
 import org.apache.tapestry5.Block;
 import org.apache.tapestry5.annotations.InjectComponent;
@@ -35,8 +35,7 @@ public class TestDateField
     }
     
     
-    @AJAX(requireSession = false)
-    Block onSubmit()
+    @AJAX Block onSubmit()
     {
         return birthdayZone.getBody();
     }
@@ -46,6 +45,7 @@ public class TestDateField
     private @InjectComponent Zone birthdayZone;
     private @PersistenceContext(unitName = "Hope") EntityManager em;
 
-    @Parameter(defaultPrefix = BindingConstants.LITERAL, value = "#5AACFD") @NotNull private String highlightColor;
-    @Mixin private ColorHighlightOverride highlightOverride;
+    private @Parameter(defaultPrefix = BindingConstants.LITERAL, value = "#5AACFD") @NotNull String highlightColor;
+    private @Mixin ColorHighlightOverride highlightOverride;
+    private @Mixin SessionTracker sessionTracker;
 }
