@@ -35,7 +35,7 @@ public class TestDateField
     }
     
     
-    @AJAX Block onSubmit()
+    public @AJAX Block onSubmit()
     {
         return birthdayZone.getBody();
     }
