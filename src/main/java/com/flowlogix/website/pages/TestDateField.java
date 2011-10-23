@@ -4,6 +4,7 @@
  */
 package com.flowlogix.website.pages;
 
+import com.flowlogix.web.mixins.CalendarPopupPatch;
 import com.flowlogix.web.mixins.ColorHighlightOverride;
 import com.flowlogix.web.mixins.SessionTracker;
 import com.flowlogix.web.services.annotations.AJAX;
@@ -48,4 +49,5 @@ public class TestDateField
     private @Parameter(defaultPrefix = BindingConstants.LITERAL, value = "#5AACFD") @NotNull String highlightColor;
     private @Mixin ColorHighlightOverride highlightOverride;
     private @Mixin SessionTracker sessionTracker;
+    private @Mixin CalendarPopupPatch calendarPopupPatch;
 }
