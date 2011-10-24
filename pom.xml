@@ -14,13 +14,13 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <netbeans.hint.deploy.server>gfv3ee6</netbeans.hint.deploy.server>
         <netbeans.hint.j2eeVersion>1.6</netbeans.hint.j2eeVersion>
-        <flowlogix.version>0.7.6</flowlogix.version>
+        <flowlogix.version>0.7.7</flowlogix.version>
     </properties>
     
     <parent>
         <groupId>com.flowlogix</groupId>
         <artifactId>build-core</artifactId>
-        <version>0.7.6</version>
+        <version>0.7.7</version>
     </parent>
 
     <build>
