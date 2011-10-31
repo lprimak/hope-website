@@ -69,8 +69,15 @@ public class EmailManager
     @AJAX(discardAfter = true, requireSession = false)
     private Block sendDrafts()
     {
-        emailManager.sendDrafts(draftFolderName);
-        setMockMessage("Draft Enauks Sent");
+        int numSent = emailManager.sendDrafts(draftFolderName);
+        if(numSent > 0)
+        {
+            setMockMessage(String.format("Draft E-Mail%s Sent (%d)", (numSent > 1)? "s": "", numSent));
+        }
+        else
+        {
+            setMockMessage("No Draft E-Mail to Send");
+        }
         return status.getBody();
     }
     

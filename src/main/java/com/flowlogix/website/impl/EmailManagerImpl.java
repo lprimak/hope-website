@@ -31,19 +31,19 @@ public class EmailManagerImpl implements EmailManagerLocal
         log.fine(mailSession.getProperties().toString());
         UserAuth user = (UserAuth)SecurityUtils.getSubject().getPrincipal();
         store.connect(user.getUserName(), user.getPassword());
-        Folder junkFolder = store.getFolder(folderName);
-        junkFolder.open(Folder.READ_WRITE);
-        Message[] messages = junkFolder.getMessages();
+        Folder folder = store.getFolder(folderName);
+        folder.open(Folder.READ_WRITE);
+        Message[] messages = folder.getMessages();
         for (Message msg : messages)
         {
             msg.setFlag(Flag.DELETED, true);
         }
-        junkFolder.close(true);
+        folder.close(true);
     }
     
     
     @Override
-    public void sendDrafts(String draftFolderName)
+    public int sendDrafts(String draftFolderName)
     {
         throw new UnsupportedOperationException("Not supported yet.");
     }
