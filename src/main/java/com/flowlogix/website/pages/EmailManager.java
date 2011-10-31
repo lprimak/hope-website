@@ -26,9 +26,9 @@ import org.apache.tapestry5.services.Request;
 
 @Secure
 @RequiresPermissions("junkmail:erase")
-public class EraseJunkMail
+public class EmailManager
 {
-    public EraseJunkMail()
+    public EmailManager()
     {
         JunkMailEraserLocal _eraser = eraserImpl;
         try
