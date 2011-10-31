@@ -11,7 +11,7 @@ import javax.mail.MessagingException;
 import javax.mail.Session;
 import javax.mail.Store;
 
-import com.flowlogix.website.JunkMailEraserLocal;
+import com.flowlogix.website.EmailManagerLocal;
 
 import com.flowlogix.website.services.security.UserAuth;
 import javax.ejb.Local;
@@ -20,12 +20,12 @@ import lombok.SneakyThrows;
 import org.apache.shiro.SecurityUtils;
 
 @Stateless
-@Local(JunkMailEraserLocal.class)
-public class JunkMailEraserImpl implements JunkMailEraserLocal
+@Local(EmailManagerLocal.class)
+public class EmailManagerImpl implements EmailManagerLocal
 {
     @SneakyThrows(MessagingException.class)
     @Override
-    public void erase(String folderName)
+    public void eraseFolder(String folderName)
     {
         @Cleanup Store store = mailSession.getStore();
         log.fine(mailSession.getProperties().toString());
@@ -51,5 +51,5 @@ public class JunkMailEraserImpl implements JunkMailEraserLocal
     
     @Resource(name = "mail/HopeMail")
     private Session mailSession;
-    private static final Logger log = Logger.getLogger(JunkMailEraserImpl.class.getName());
+    private static final Logger log = Logger.getLogger(EmailManagerImpl.class.getName());
 }

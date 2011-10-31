@@ -9,7 +9,7 @@ import org.apache.tapestry5.annotations.OnEvent;
 import org.apache.tapestry5.annotations.Secure;
 import org.apache.tapestry5.corelib.components.Zone;
 
-import com.flowlogix.website.JunkMailEraserLocal;
+import com.flowlogix.website.EmailManagerLocal;
 import com.flowlogix.website.services.HopeModule;
 import javax.ejb.EJB;
 import javax.ejb.EJBException;
@@ -30,7 +30,7 @@ public class EmailManager
 {
     public EmailManager()
     {
-        JunkMailEraserLocal _eraser = eraserImpl;
+        EmailManagerLocal _eraser = eraserImpl;
         try
         {
             eraserImpl.isMock();            
@@ -58,7 +58,7 @@ public class EmailManager
     @AJAX(discardAfter = true, requireSession = false)
     private Block eraseJunkMail()
     {
-        eraser.erase(junkFolderName);
+        eraser.eraseFolder(junkFolderName);
         final String junkErasedMessage = "Erased Junk Mail";
         if (eraser.isMock())
         {
@@ -89,9 +89,9 @@ public class EmailManager
    
     
     @Getter @Persist(PersistenceConstants.FLASH) private String emailStatus;  
-    @EJB(beanName = "JunkMailEraserImpl") private JunkMailEraserLocal eraserImpl;
-    @EJB(beanName = "JunkMailEraserMock") private JunkMailEraserLocal eraserMock;
-    private final JunkMailEraserLocal eraser;
+    @EJB(beanName = "JunkMailEraserImpl") private EmailManagerLocal eraserImpl;
+    @EJB(beanName = "JunkMailEraserMock") private EmailManagerLocal eraserMock;
+    private final EmailManagerLocal eraser;
     @InjectComponent private Zone status;
     @Inject private Request request;
     @Inject private ComponentResources cr;

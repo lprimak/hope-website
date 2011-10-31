@@ -2,14 +2,14 @@ package com.flowlogix.website.impl;
 
 import javax.ejb.Stateless;
 
-import com.flowlogix.website.JunkMailEraserLocal;
+import com.flowlogix.website.EmailManagerLocal;
 
 
 @Stateless
-public class JunkMailEraserMock implements JunkMailEraserLocal
+public class EmailManagerMock implements EmailManagerLocal
 {
     @Override
-    public void erase(String folderName)
+    public void eraseFolder(String folderName)
     {
         // just a fake test
     }
