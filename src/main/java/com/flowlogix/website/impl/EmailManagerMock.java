@@ -16,6 +16,13 @@ public class EmailManagerMock implements EmailManagerLocal
 
     
     @Override
+    public void sendDrafts(String draftFolderName)
+    {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+    
+    
+    @Override
     public boolean isMock()
     {
         return true;

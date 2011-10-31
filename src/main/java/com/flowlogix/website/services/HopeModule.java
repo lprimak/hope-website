@@ -42,6 +42,7 @@ public class HopeModule
     {
         configuration.add(PAM_AUTH_SERVICE_NAME, "pwauth");
         configuration.add(JUNK_FOLDER_NAME, "Junk");
+        configuration.add(DRAFT_FOLDER_NAME, "Draft");
     }
     
     
@@ -55,4 +56,5 @@ public class HopeModule
     
     public static final String PAM_AUTH_SERVICE_NAME = "com.flowlogix.pam-service-name";
     public static final String JUNK_FOLDER_NAME = "com.flowlogix.junk-folder-name";
+    public static final String DRAFT_FOLDER_NAME = "com.flowlogix.draft-folder-name";
 }

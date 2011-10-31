@@ -39,7 +39,7 @@ public class EmailManager
         {
             _eraser = eraserMock;
         }
-        this.eraser = _eraser;
+        this.emailManager = _eraser;
     }
     
     
@@ -54,23 +54,26 @@ public class EmailManager
 	
 	
     @SuppressWarnings("unused")
-    @OnEvent(value = "erase")
+    @OnEvent(value = "eraseJunk")
     @AJAX(discardAfter = true, requireSession = false)
     private Block eraseJunkMail()
     {
-        eraser.eraseFolder(junkFolderName);
-        final String junkErasedMessage = "Erased Junk Mail";
-        if (eraser.isMock())
-        {
-            emailStatus = junkErasedMessage + " (Mock)";
-        } 
-        else
-        {
-            emailStatus = junkErasedMessage;
-        }
+        emailManager.eraseFolder(junkFolderName);
+        setMockMessage("Erased Junk Mail");
         return status.getBody();
     }
+    
 
+    @SuppressWarnings("unused")
+    @OnEvent(value = "sendDrafts")
+    @AJAX(discardAfter = true, requireSession = false)
+    private Block sendDrafts()
+    {
+        emailManager.sendDrafts(draftFolderName);
+        setMockMessage("Draft Enauks Sent");
+        return status.getBody();
+    }
+    
     
     @SuppressWarnings("unused")
     @OnEvent(value="updatestatus", component="status")
@@ -86,14 +89,28 @@ public class EmailManager
     {
         SecurityUtils.getSubject().logout();
     }
-   
     
+    
+    private void setMockMessage(final String junkErasedMessage)
+    {
+        if (emailManager.isMock())
+        {
+            emailStatus = junkErasedMessage + " (Mock)";
+        } 
+        else
+        {
+            emailStatus = junkErasedMessage;
+        }
+    }
+
+     
     @Getter @Persist(PersistenceConstants.FLASH) private String emailStatus;  
-    @EJB(beanName = "JunkMailEraserImpl") private EmailManagerLocal eraserImpl;
-    @EJB(beanName = "JunkMailEraserMock") private EmailManagerLocal eraserMock;
-    private final EmailManagerLocal eraser;
+    @EJB(beanName = "EmailManagerImpl") private EmailManagerLocal eraserImpl;
+    @EJB(beanName = "EmailManagerMock") private EmailManagerLocal eraserMock;
+    private final EmailManagerLocal emailManager;
     @InjectComponent private Zone status;
     @Inject private Request request;
     @Inject private ComponentResources cr;
     private @Inject @Symbol(HopeModule.JUNK_FOLDER_NAME) String junkFolderName;
+    private @Inject @Symbol(HopeModule.DRAFT_FOLDER_NAME) String draftFolderName;
 }

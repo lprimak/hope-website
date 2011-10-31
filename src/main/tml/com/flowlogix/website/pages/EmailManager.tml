@@ -8,10 +8,15 @@
 <body>
   <form t:type="form" zone="status">
 	<h1>Press 
-	<button t:type="submit" value="Here" event="erase" t:mixins="flowlogix/DisableAfterSubmit">
+	<button t:type="submit" value="Here" event="eraseJunk" t:mixins="flowlogix/DisableAfterSubmit">
 	  <t:remove>Here</t:remove>
 	</button>
 	to Erase Junk Email</h1>
+	<h1>Press 
+	<button t:type="submit" value="Here" event="sendDrafts" t:mixins="flowlogix/DisableAfterSubmit">
+	  <t:remove>Here</t:remove>
+	</button>
+	to Send Draft Emails</h1>
   </form>
   <t:zone t:id="status" update="colorhighlight" 
           t:mixins="flowlogix/ColorHighlight, flowlogix/PeriodicUpdater, flowlogix/DeferZoneUpdate"

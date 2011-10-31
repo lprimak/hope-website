@@ -40,6 +40,13 @@ public class EmailManagerImpl implements EmailManagerLocal
         }
         junkFolder.close(true);
     }
+    
+    
+    @Override
+    public void sendDrafts(String draftFolderName)
+    {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 
     
     @Override
