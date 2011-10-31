@@ -25,7 +25,7 @@ import org.apache.tapestry5.services.Request;
 
 
 @Secure
-@RequiresPermissions("junkmail:erase")
+@RequiresPermissions({"mail:junk:erase", "mail:draft:send"})
 public class EmailManager
 {
     public EmailManager()
@@ -46,9 +46,9 @@ public class EmailManager
     @SetupRender
     void init()
     {
-        if(junkMailErased == null)
+        if(emailStatus == null)
         {
-            junkMailErased = "<None>";
+            emailStatus = "<None>";
         }
     }
 	
@@ -59,24 +59,25 @@ public class EmailManager
     private Block eraseJunkMail()
     {
         eraser.erase(junkFolderName);
+        final String junkErasedMessage = "Erased Junk Mail";
         if (eraser.isMock())
         {
-            junkMailErased = "Erased Mock!";
+            emailStatus = junkErasedMessage + " (Mock)";
         } 
         else
         {
-            junkMailErased = "Erased!";
+            emailStatus = junkErasedMessage;
         }
-        return junkStatus.getBody();
+        return status.getBody();
     }
 
     
     @SuppressWarnings("unused")
-    @OnEvent(value="updatestatus", component="junkStatus")
-    private Block updateJunkStatus()
+    @OnEvent(value="updatestatus", component="status")
+    private Block updateStatus()
     {
         init();
-        return junkStatus.getBody();
+        return status.getBody();
     }
     
     
@@ -87,11 +88,11 @@ public class EmailManager
     }
    
     
-    @Getter @Persist(PersistenceConstants.FLASH) private String junkMailErased;  
+    @Getter @Persist(PersistenceConstants.FLASH) private String emailStatus;  
     @EJB(beanName = "JunkMailEraserImpl") private JunkMailEraserLocal eraserImpl;
     @EJB(beanName = "JunkMailEraserMock") private JunkMailEraserLocal eraserMock;
     private final JunkMailEraserLocal eraser;
-    @InjectComponent private Zone junkStatus;
+    @InjectComponent private Zone status;
     @Inject private Request request;
     @Inject private ComponentResources cr;
     private @Inject @Symbol(HopeModule.JUNK_FOLDER_NAME) String junkFolderName;

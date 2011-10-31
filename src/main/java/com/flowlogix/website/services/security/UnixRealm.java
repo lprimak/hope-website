@@ -82,7 +82,7 @@ public class UnixRealm extends AuthorizingRealm
     {
         Set<String> roles = new HashSet<String>();
         Set<Permission> permissions = new HashSet<Permission>();
-        permissions.add(new WildcardPermission("junkmail:erase"));
+        permissions.add(new WildcardPermission("mail:*"));
         Collection<UserAuth> principalsList = principals.byType(UserAuth.class);
 
         if (principalsList.isEmpty())
