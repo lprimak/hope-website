@@ -16,7 +16,7 @@ public class EmailManagerMock implements EmailManagerLocal
 
     
     @Override
-    public int sendDrafts(String draftFolderName)
+    public int sendDrafts(String draftFolderName, String sentFolderName)
     {
         return 0;
     }

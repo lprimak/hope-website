@@ -69,7 +69,7 @@ public class EmailManager
     @AJAX(discardAfter = true, requireSession = false)
     private Block sendDrafts()
     {
-        int numSent = emailManager.sendDrafts(draftFolderName);
+        int numSent = emailManager.sendDrafts(draftFolderName, sentFolderName);
         if(numSent > 0)
         {
             setMockMessage(String.format("Draft E-Mail%s Sent (%d)", (numSent > 1)? "s": "", numSent));
@@ -120,4 +120,5 @@ public class EmailManager
     @Inject private ComponentResources cr;
     private @Inject @Symbol(HopeModule.JUNK_FOLDER_NAME) String junkFolderName;
     private @Inject @Symbol(HopeModule.DRAFT_FOLDER_NAME) String draftFolderName;
+    private @Inject @Symbol(HopeModule.SENT_FOLDER_NAME) String sentFolderName;
 }

@@ -8,5 +8,5 @@ public interface EmailManagerLocal
     public void eraseFolder(String folderName);
     public boolean isMock();
 
-    public int sendDrafts(String draftFolderName);
+    public int sendDrafts(String draftFolderName, String sentFolderName);
 }

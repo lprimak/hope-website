@@ -43,10 +43,12 @@ public class EmailManagerImpl implements EmailManagerLocal
     
     @Override
     @SneakyThrows(MessagingException.class)
-    public int sendDrafts(String draftFolderName)
+    public int sendDrafts(String draftFolderName, String sentFolderName)
     {
         @Cleanup Folder folder = new Folder(draftFolderName, javax.mail.Folder.READ_WRITE);
         @Cleanup Transport transport = mailSession.getTransport("smtp");
+        transport.connect();
+        @Cleanup Folder sentFolder = folder.getAnotherFolder(sentFolderName, javax.mail.Folder.READ_WRITE);
         int numSent = 0;
         for(Message msg : folder.getFolder().getMessages())
         {
@@ -56,9 +58,11 @@ public class EmailManagerImpl implements EmailManagerLocal
             addAddresses(addrs, msg, Message.RecipientType.BCC);
             Address[] addrArr = new Address[addrs.size()];
             transport.sendMessage(msg, addrs.toArray(addrArr));
+            sentFolder.getFolder().appendMessages(new Message[] { msg });
             msg.setFlag(Flag.DELETED, true);
             ++numSent;
         }
+        
         return numSent;
     }
 
@@ -99,12 +103,29 @@ public class EmailManagerImpl implements EmailManagerLocal
                 throw e;
             }
         }
+
+        
+        private Folder(Store store, String folderName, int options) throws MessagingException
+        {
+            this.store = null;
+            this.folder = store.getFolder(folderName);
+            folder.open(options);
+        }
+        
+        
+        public Folder getAnotherFolder(String folderName, int options) throws MessagingException
+        {
+            return new Folder(store, folderName, options);
+        }
         
         
         public void close() throws MessagingException
         {
             folder.close(true);
-            store.close();
+            if(store != null)
+            {
+                store.close();
+            }
         }
         
         
