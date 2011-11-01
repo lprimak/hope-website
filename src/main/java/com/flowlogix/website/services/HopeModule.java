@@ -42,7 +42,7 @@ public class HopeModule
     {
         configuration.add(PAM_AUTH_SERVICE_NAME, "pwauth");
         configuration.add(JUNK_FOLDER_NAME, "Junk");
-        configuration.add(DRAFT_FOLDER_NAME, "Draft");
+        configuration.add(DRAFT_FOLDER_NAME, "Drafts");
     }
     
     

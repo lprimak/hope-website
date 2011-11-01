@@ -85,11 +85,19 @@ public class EmailManagerImpl implements EmailManagerLocal
         public Folder(String folderName, int options) throws MessagingException
         {
             store = mailSession.getStore();
-            log.fine(mailSession.getProperties().toString());
-            UserAuth user = (UserAuth) SecurityUtils.getSubject().getPrincipal();
-            store.connect(user.getUserName(), user.getPassword());
-            folder = store.getFolder(folderName);
-            folder.open(options);
+            try
+            {
+                log.fine(mailSession.getProperties().toString());
+                UserAuth user = (UserAuth) SecurityUtils.getSubject().getPrincipal();
+                store.connect(user.getUserName(), user.getPassword());
+                folder = store.getFolder(folderName);
+                folder.open(options);
+            }
+            catch(MessagingException e)
+            {
+                store.close();
+                throw e;
+            }
         }
         
         
