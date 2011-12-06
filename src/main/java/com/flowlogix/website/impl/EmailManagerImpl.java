@@ -17,7 +17,6 @@ import com.flowlogix.website.services.security.UserAuth;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
-import javax.ejb.Local;
 import javax.mail.Address;
 import javax.mail.Transport;
 import lombok.Cleanup;
@@ -25,8 +24,8 @@ import lombok.Getter;
 import lombok.SneakyThrows;
 import org.apache.shiro.SecurityUtils;
 
+
 @Stateless
-@Local(EmailManagerLocal.class)
 public class EmailManagerImpl implements EmailManagerLocal
 {
     @SneakyThrows(MessagingException.class)
@@ -52,6 +51,10 @@ public class EmailManagerImpl implements EmailManagerLocal
         int numSent = 0;
         for(Message msg : folder.getFolder().getMessages())
         {
+            if(msg.isSet(Flag.DELETED))
+            {
+                continue;
+            }
             List<Address> addrs = new LinkedList<Address>();
             addAddresses(addrs, msg, Message.RecipientType.TO);
             addAddresses(addrs, msg, Message.RecipientType.CC);
@@ -60,6 +63,7 @@ public class EmailManagerImpl implements EmailManagerLocal
             transport.sendMessage(msg, addrs.toArray(addrArr));
             sentFolder.getFolder().appendMessages(new Message[] { msg });
             msg.setFlag(Flag.DELETED, true);
+            
             ++numSent;
         }
         
