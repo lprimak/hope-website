@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.flowlogix.website.services.security;
+package com.flowlogix.website.security;
 
 import java.io.Serializable;
 import java.util.HashSet;

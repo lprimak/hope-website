@@ -13,7 +13,7 @@ import javax.mail.Store;
 
 import com.flowlogix.website.EmailManagerLocal;
 
-import com.flowlogix.website.services.security.UserAuth;
+import com.flowlogix.website.security.UserAuth;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;

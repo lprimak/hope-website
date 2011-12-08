@@ -1,6 +1,6 @@
 package com.flowlogix.website.services;
 
-import com.flowlogix.website.services.security.UnixRealm;
+import com.flowlogix.website.security.UnixRealm;
 import org.apache.shiro.realm.Realm;
 import org.apache.shiro.web.mgt.WebSecurityManager;
 import org.apache.tapestry5.SymbolConstants;
