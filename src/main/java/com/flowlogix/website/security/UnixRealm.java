@@ -7,6 +7,7 @@ package com.flowlogix.website.security;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
+import lombok.Cleanup;
 import lombok.SneakyThrows;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
@@ -68,16 +69,18 @@ public class UnixRealm extends AuthorizingRealm
         UnixUser unixUser = null;
         try
         {
-            unixUser = getPam().authenticate(upToken.getUsername(), password);
+            @Cleanup("dispose") PAM pam = getPam();
+            unixUser = pam.authenticate(upToken.getUsername(), password);
         } catch (PAMException ex)
         {
             throw new AuthenticationException(ex);
         }
-        return new SimpleAuthenticationInfo(new UserAuth(unixUser.getUserName(), password, unixUser.getGroups()), upToken.getPassword(), getName());
+        return new SimpleAuthenticationInfo(new UserAuth(unixUser.getUserName(), password), upToken.getPassword(), getName());
     }
 
     
     @Override
+    @SneakyThrows(PAMException.class)
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals)
     {
         Set<String> roles = new HashSet<String>();
@@ -92,7 +95,9 @@ public class UnixRealm extends AuthorizingRealm
 
         for (UserAuth userPrincipal : principalsList)
         {
-            roles.addAll(userPrincipal.getRoles());
+            @Cleanup("dispose") PAM pam = getPam();
+            UnixUser unixUser = pam.authenticate(userPrincipal.getUserName(), userPrincipal.getPassword());
+            roles.addAll(unixUser.getGroups());
         }
         SimpleAuthorizationInfo info = new SimpleAuthorizationInfo(roles);
         info.setRoles(roles); 
