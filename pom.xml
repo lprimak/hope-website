@@ -14,13 +14,13 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <netbeans.hint.deploy.server>gfv3ee6</netbeans.hint.deploy.server>
         <netbeans.hint.j2eeVersion>1.6</netbeans.hint.j2eeVersion>
-        <flowlogix.version>0.9-SNAPSHOT</flowlogix.version>
+        <flowlogix.version>0.8.9</flowlogix.version>
     </properties>
     
     <parent>
         <groupId>com.flowlogix</groupId>
         <artifactId>tapestry-build-core</artifactId>
-        <version>0.9-SNAPSHOT</version>
+        <version>0.8.9</version>
     </parent>
 
     <build>
