@@ -19,8 +19,8 @@
 	to Send Draft Emails</h1>
   </form>
   <t:zone t:id="status" update="colorhighlight" 
-          t:mixins="flowlogix/ColorHighlight, flowlogix/PeriodicUpdater, flowlogix/DeferZoneUpdate"
-          event="updateStatus" period="5" color="#5AACFD">
+          t:mixins="flowlogix/ColorHighlight, flowlogix/DeferZoneUpdate"
+          event="updateStatus" period="5" highlightColor="#5AACFD">
     <h3>E-Mail Operation Status: ${emailStatus}</h3>
   </t:zone>
   <form t:type="form">

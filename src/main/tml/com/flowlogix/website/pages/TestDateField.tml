@@ -11,7 +11,7 @@ DIV.t-beaneditor {
 
 </head>
 <body>
-<t:zone t:id="birthdayZone" update="colorhighlight" t:mixins="flowlogix/ColorHighlight" color="#5AACFD">
+<t:zone t:id="birthdayZone" update="colorhighlight" t:mixins="flowlogix/ColorHighlight" highlightColor="#5AACFD">
   <form t:type="form" zone="birthdayZone">
       <input t:type="datefield" value="birthdays.get(0).dob"/>
       <input t:type="submit" type="button" value="Submit"/>
