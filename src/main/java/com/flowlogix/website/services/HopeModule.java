@@ -32,7 +32,6 @@ public class HopeModule
     public void setAppDefaults(MappedConfiguration<String, String> configuration)
     {
         configuration.add(SymbolConstants.PRODUCTION_MODE, "false");
-        configuration.add(SymbolConstants.FILE_CHECK_INTERVAL, "1 y");
     }
 
     
