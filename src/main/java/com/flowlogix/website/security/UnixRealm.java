@@ -100,7 +100,6 @@ public class UnixRealm extends AuthorizingRealm
             roles.addAll(unixUser.getGroups());
         }
         SimpleAuthorizationInfo info = new SimpleAuthorizationInfo(roles);
-        info.setRoles(roles); 
         info.setObjectPermissions(permissions); 
 
         return info;
