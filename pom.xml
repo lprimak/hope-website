@@ -34,6 +34,11 @@
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
+            <!-- Groovy Plugin, must be after GWT plugin -->
+            <plugin>
+                <groupId>org.codehaus.gmaven</groupId>
+                <artifactId>gmaven-plugin</artifactId>
+            </plugin>
         </plugins>
         <finalName>${project.artifactId}</finalName>
         <resources>
