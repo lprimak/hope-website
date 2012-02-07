@@ -14,13 +14,13 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <netbeans.hint.deploy.server>gfv3ee6</netbeans.hint.deploy.server>
         <netbeans.hint.j2eeVersion>1.6</netbeans.hint.j2eeVersion>
-        <flowlogix.version>0.9.2-SNAPSHOT</flowlogix.version>
+        <flowlogix.version>0.9.2</flowlogix.version>
     </properties>
     
     <parent>
         <groupId>com.flowlogix</groupId>
         <artifactId>tapestry-build-core</artifactId>
-        <version>0.9.2-SNAPSHOT</version>
+        <version>0.9.2</version>
     </parent>
 
     <build>
@@ -34,7 +34,7 @@
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
-            <!-- Groovy Plugin, must be after GWT plugin -->
+            <!-- Groovy Plugin -->
             <plugin>
                 <groupId>org.codehaus.gmaven</groupId>
                 <artifactId>gmaven-plugin</artifactId>
