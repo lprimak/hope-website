@@ -12,6 +12,7 @@ import org.apache.tapestry5.ioc.annotations.Symbol;
 import org.apache.tapestry5.ioc.services.ApplicationDefaults;
 import org.apache.tapestry5.ioc.services.FactoryDefaults;
 import org.apache.tapestry5.ioc.services.SymbolProvider;
+import org.got5.tapestry5.jquery.JQuerySymbolConstants;
 import org.tynamo.security.SecuritySymbols;
 
 
@@ -34,6 +35,7 @@ public class HopeModule
     {
         configuration.add(SymbolConstants.PRODUCTION_MODE, "false");
         configuration.add(SecuritySymbols.LOGIN_URL, "flowlogix/security/login");
+        configuration.add(JQuerySymbolConstants.SUPPRESS_PROTOTYPE, Boolean.FALSE.toString());
     }
 
     

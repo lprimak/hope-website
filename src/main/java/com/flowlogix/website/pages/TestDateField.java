@@ -15,11 +15,7 @@ import javax.validation.constraints.NotNull;
 import lombok.Getter;
 import org.apache.tapestry5.BindingConstants;
 import org.apache.tapestry5.Block;
-import org.apache.tapestry5.annotations.InjectComponent;
-import org.apache.tapestry5.annotations.Mixin;
-import org.apache.tapestry5.annotations.Parameter;
-import org.apache.tapestry5.annotations.Persist;
-import org.apache.tapestry5.annotations.SetupRender;
+import org.apache.tapestry5.annotations.*;
 import org.apache.tapestry5.corelib.components.Zone;
 
 /**
