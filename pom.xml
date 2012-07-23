@@ -14,15 +14,15 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <netbeans.hint.deploy.server>gfv3ee6</netbeans.hint.deploy.server>
         <netbeans.hint.j2eeVersion>1.6</netbeans.hint.j2eeVersion>
-        <flowlogix.version>0.9.8</flowlogix.version>
-        <yuicompressor.version>2.4.6-cust-tap-${tap.version}</yuicompressor.version>
-        <tap-jquery.version>3.2.0</tap-jquery.version>
+        <flowlogix.version>1.0</flowlogix.version>
+        <yuicompressor.version>2.4.7-cust-tap-${tap.version}</yuicompressor.version>
+        <tap-jquery.version>3.2.1</tap-jquery.version>
     </properties>
     
     <parent>
         <groupId>com.flowlogix</groupId>
         <artifactId>tapestry-build-core</artifactId>
-        <version>0.9.8</version>
+        <version>1.0</version>
     </parent>
 
     <build>
