@@ -16,7 +16,7 @@
         <netbeans.hint.j2eeVersion>1.6</netbeans.hint.j2eeVersion>
         <flowlogix.version>1.0</flowlogix.version>
         <yuicompressor.version>2.4.7-cust-tap-${tap.version}</yuicompressor.version>
-        <tap-jquery.version>3.2.1</tap-jquery.version>
+        <tap-jquery.version>3.3.1-20120723</tap-jquery.version>
     </properties>
     
     <parent>
@@ -74,7 +74,7 @@
             <scope>${war-deps.scope}</scope>
         </dependency>
         <dependency>
-            <groupId>com.github.lltyk</groupId>
+            <groupId>org.got5</groupId>
             <artifactId>tapestry5-jquery</artifactId>
             <version>${tap-jquery.version}</version>
             <scope>${war-deps.scope}</scope>

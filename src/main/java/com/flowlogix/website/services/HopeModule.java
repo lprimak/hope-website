@@ -36,6 +36,7 @@ public class HopeModule
         configuration.add(SymbolConstants.PRODUCTION_MODE, "false");
         configuration.add(SecuritySymbols.LOGIN_URL, "flowlogix/security/login");
         configuration.add(JQuerySymbolConstants.SUPPRESS_PROTOTYPE, Boolean.FALSE.toString());
+        configuration.add(JQuerySymbolConstants.USE_MINIFIED_JS, Boolean.FALSE.toString());
     }
 
     
