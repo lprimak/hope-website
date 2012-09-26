@@ -2,6 +2,9 @@
 <web-app id="Hope" version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
     <display-name>Hope</display-name>
     <distributable/>
+     <session-config>
+        <tracking-mode>COOKIE</tracking-mode>
+    </session-config>
     <context-param>
         <param-name>tapestry.app-package</param-name>
         <param-value>com.flowlogix.website</param-value>
