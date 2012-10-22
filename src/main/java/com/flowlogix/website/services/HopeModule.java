@@ -34,6 +34,7 @@ public class HopeModule
     public void setAppDefaults(MappedConfiguration<String, String> configuration)
     {
         configuration.add(SymbolConstants.PRODUCTION_MODE, "false");
+        configuration.add(SymbolConstants.HMAC_PASSPHRASE, HopeModule.class.getName());
         configuration.add(SecuritySymbols.LOGIN_URL, "flowlogix/security/login");
         configuration.add(JQuerySymbolConstants.SUPPRESS_PROTOTYPE, Boolean.FALSE.toString());
         configuration.add(JQuerySymbolConstants.JQUERY_ALIAS, "$j");
