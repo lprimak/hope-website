@@ -14,7 +14,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <netbeans.hint.deploy.server>gfv3ee6</netbeans.hint.deploy.server>
         <netbeans.hint.j2eeVersion>1.6</netbeans.hint.j2eeVersion>
-        <flowlogix.version>1.2.2</flowlogix.version>
+        <flowlogix.version>1.2.3-SNAPSHOT</flowlogix.version>
         <yuicompressor.version>2.4.7-cust-tap-${tap.version}</yuicompressor.version>
         <tap-jquery.version>3.3.3</tap-jquery.version>
     </properties>
@@ -22,7 +22,7 @@
     <parent>
         <groupId>com.flowlogix</groupId>
         <artifactId>tapestry-build-core</artifactId>
-        <version>1.2.2</version>
+        <version>1.2.3-SNAPSHOT</version>
     </parent>
 
     <build>
