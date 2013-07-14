@@ -34,7 +34,7 @@ public class HopeModule
     public void setAppDefaults(MappedConfiguration<String, String> configuration)
     {
         configuration.add(SymbolConstants.PRODUCTION_MODE, "false");
-        configuration.add(SymbolConstants.APPLICATION_VERSION, "0.0.1-tap5.3.6");
+        configuration.add(SymbolConstants.APPLICATION_VERSION, "0.0.1-tap5.3.7");
         configuration.add(SymbolConstants.HMAC_PASSPHRASE, HopeModule.class.getName());
         configuration.add(SecuritySymbols.LOGIN_URL, "flowlogix/security/login");
         configuration.add(JQuerySymbolConstants.SUPPRESS_PROTOTYPE, Boolean.FALSE.toString());
