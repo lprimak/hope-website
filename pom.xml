@@ -16,7 +16,7 @@
         <netbeans.hint.j2eeVersion>1.6</netbeans.hint.j2eeVersion>
         <flowlogix.version>1.2.3-SNAPSHOT</flowlogix.version>
         <yuicompressor.version>2.4.7-cust-tap-${tap.version}</yuicompressor.version>
-        <tap-jquery.version>3.3.3</tap-jquery.version>
+        <tap-jquery.version>3.3.6</tap-jquery.version>
     </properties>
     
     <parent>
