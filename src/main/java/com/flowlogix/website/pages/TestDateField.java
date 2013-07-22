@@ -7,10 +7,10 @@ package com.flowlogix.website.pages;
 import com.flowlogix.web.mixins.CalendarPopupPatch;
 import com.flowlogix.web.mixins.ColorHighlightOverride;
 import com.flowlogix.web.services.annotations.AJAX;
+import com.flowlogix.website.dao.SampleDAOLocal;
 import com.flowlogix.website.entities.Sample;
 import java.util.List;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
+import javax.ejb.EJB;
 import javax.validation.constraints.NotNull;
 import lombok.Getter;
 import org.apache.tapestry5.BindingConstants;
@@ -27,7 +27,7 @@ public class TestDateField
     @SetupRender
     private void populate()
     {
-        birthdays = em.createNamedQuery("Sample.findAll", Sample.class).getResultList();
+        birthdays = sampleDAO.query("Sample.findAll");
     }
     
     
@@ -39,7 +39,7 @@ public class TestDateField
     
     private @Persist @Getter List<Sample> birthdays;
     private @InjectComponent Zone birthdayZone;
-    private @PersistenceContext(unitName = "Hope") EntityManager em;
+    private @EJB SampleDAOLocal sampleDAO;
 
     private @Parameter(defaultPrefix = BindingConstants.LITERAL, value = "#5AACFD") @NotNull String highlightColor;
     private @Mixin ColorHighlightOverride highlightOverride;
