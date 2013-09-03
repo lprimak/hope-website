@@ -12,7 +12,6 @@ import org.apache.tapestry5.ioc.annotations.Symbol;
 import org.apache.tapestry5.ioc.services.ApplicationDefaults;
 import org.apache.tapestry5.ioc.services.FactoryDefaults;
 import org.apache.tapestry5.ioc.services.SymbolProvider;
-import org.got5.tapestry5.jquery.JQuerySymbolConstants;
 import org.tynamo.security.SecuritySymbols;
 
 
@@ -37,9 +36,6 @@ public class HopeModule
         configuration.add(SymbolConstants.APPLICATION_VERSION, "0.0.1-tap5.3.7");
         configuration.add(SymbolConstants.HMAC_PASSPHRASE, HopeModule.class.getName());
         configuration.add(SecuritySymbols.LOGIN_URL, "flowlogix/security/login");
-        configuration.add(JQuerySymbolConstants.SUPPRESS_PROTOTYPE, Boolean.FALSE.toString());
-        configuration.add(JQuerySymbolConstants.JQUERY_ALIAS, "$j");
-        configuration.add(JQuerySymbolConstants.USE_MINIFIED_JS, Boolean.FALSE.toString());
     }
 
     

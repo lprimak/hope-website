@@ -14,15 +14,13 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <netbeans.hint.deploy.server>gfv3ee6</netbeans.hint.deploy.server>
         <netbeans.hint.j2eeVersion>1.6</netbeans.hint.j2eeVersion>
-        <flowlogix.version>1.2.6</flowlogix.version>
-        <yuicompressor.version>2.4.7-cust-tap-${tap.version}</yuicompressor.version>
-        <tap-jquery.version>3.3.6</tap-jquery.version>
+        <flowlogix.version>1.4-SNAPSHOT</flowlogix.version>
     </properties>
     
     <parent>
         <groupId>com.flowlogix</groupId>
         <artifactId>tapestry-build-core</artifactId>
-        <version>1.2.6</version>
+        <version>1.4-SNAPSHOT</version>
     </parent>
 
     <build>
@@ -66,18 +64,6 @@
             <artifactId>libpam4j</artifactId>
             <version>1.4</version>
             <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.yahoo.platform.yui</groupId>
-            <artifactId>yuicompressor</artifactId>
-            <version>${yuicompressor.version}</version>
-            <scope>${war-deps.scope}</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.got5</groupId>
-            <artifactId>tapestry5-jquery</artifactId>
-            <version>${tap-jquery.version}</version>
-            <scope>${war-deps.scope}</scope>
         </dependency>
     </dependencies>
     
