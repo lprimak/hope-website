@@ -1,5 +1,6 @@
 package com.flowlogix.website.pages;
 
+import com.flowlogix.web.mixins.ColorHighlightOverride;
 import com.flowlogix.web.mixins.DisableAfterSubmit;
 import com.flowlogix.web.services.annotations.AJAX;
 import lombok.Getter;
@@ -11,12 +12,10 @@ import org.apache.tapestry5.annotations.Secure;
 import org.apache.tapestry5.corelib.components.Zone;
 
 import com.flowlogix.website.EmailManagerLocal;
-import com.flowlogix.website.mixins.ColorHighlightOverride;
 import com.flowlogix.website.services.HopeModule;
 import javax.ejb.EJB;
 import javax.ejb.EJBException;
 import javax.validation.constraints.NotNull;
-import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.apache.tapestry5.BindingConstants;
@@ -31,7 +30,7 @@ import org.apache.tapestry5.ioc.annotations.Symbol;
 import org.apache.tapestry5.services.Request;
 
 
-@Secure @Slf4j
+@Secure
 @RequiresPermissions({"mail:junk:erase", "mail:draft:send"})
 public class EmailManager
 {
