@@ -12,6 +12,8 @@ import org.apache.tapestry5.ioc.annotations.Symbol;
 import org.apache.tapestry5.ioc.services.ApplicationDefaults;
 import org.apache.tapestry5.ioc.services.FactoryDefaults;
 import org.apache.tapestry5.ioc.services.SymbolProvider;
+import org.apache.tapestry5.services.compatibility.Compatibility;
+import org.apache.tapestry5.services.compatibility.Trait;
 import org.tynamo.security.SecuritySymbols;
 
 
@@ -33,9 +35,19 @@ public class HopeModule
     public void setAppDefaults(MappedConfiguration<String, String> configuration)
     {
         configuration.add(SymbolConstants.PRODUCTION_MODE, "false");
-        configuration.add(SymbolConstants.APPLICATION_VERSION, "0.0.1-tap5.3.7");
+        configuration.add(SymbolConstants.APPLICATION_VERSION, "0.0.5-tap5.4");
         configuration.add(SymbolConstants.HMAC_PASSPHRASE, HopeModule.class.getName());
+        configuration.add(SymbolConstants.JAVASCRIPT_INFRASTRUCTURE_PROVIDER, "jquery");
+        configuration.add(SymbolConstants.SESSION_LOCKING_ENABLED, "false");
         configuration.add(SecuritySymbols.LOGIN_URL, "flowlogix/security/login");
+    }
+    
+    
+    @Contribute(Compatibility.class)
+    public static void disableScriptaculous(MappedConfiguration<Trait, Boolean> configuration)
+    {
+        configuration.add(Trait.SCRIPTACULOUS, false);
+        configuration.add(Trait.INITIALIZERS, false);
     }
 
     

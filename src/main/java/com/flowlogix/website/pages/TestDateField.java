@@ -1,14 +1,12 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.flowlogix.website.pages;
 
 import com.flowlogix.web.mixins.CalendarPopupPatch;
-import com.flowlogix.web.mixins.ColorHighlightOverride;
+import com.flowlogix.web.mixins.DisableAfterSubmit;
+import com.flowlogix.web.mixins.ZoneLoadingSpinner;
 import com.flowlogix.web.services.annotations.AJAX;
 import com.flowlogix.website.dao.SampleDAOLocal;
 import com.flowlogix.website.entities.Sample;
+import com.flowlogix.website.mixins.ColorHighlightOverride;
 import java.util.List;
 import javax.ejb.EJB;
 import javax.validation.constraints.NotNull;
@@ -22,6 +20,7 @@ import org.apache.tapestry5.corelib.components.Zone;
  *
  * @author lprimak
  */
+@Import(stack = "core")
 public class TestDateField
 {
     @SetupRender
@@ -43,5 +42,7 @@ public class TestDateField
 
     private @Parameter(defaultPrefix = BindingConstants.LITERAL, value = "#5AACFD") @NotNull String highlightColor;
     private @Mixin ColorHighlightOverride highlightOverride;
+    private @Mixin DisableAfterSubmit das;
     private @Mixin CalendarPopupPatch calendarPopupPatch;
+    private @Mixin ZoneLoadingSpinner spi;
 }

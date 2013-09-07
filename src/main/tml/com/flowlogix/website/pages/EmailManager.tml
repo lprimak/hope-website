@@ -18,7 +18,7 @@
 	</button>
 	to Send Draft Emails</h1>
   </form>
-  <t:zone t:id="status" t:mixins="flowlogix/DeferZoneUpdate"
+  <t:zone t:id="status" t:mixins="flowlogix/PeriodicUpdater" deferOnce="true"
           event="updateStatus" period="5">
     <h3>E-Mail Operation Status: ${emailStatus}</h3>
   </t:zone>
