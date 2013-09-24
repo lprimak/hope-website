@@ -4,8 +4,9 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <title>E-Mail Manager</title>
+<link rel="stylesheet" type="text/css" href="${context:css/base_layout.css}"/>
 </head>
-<body>
+<body class="stl">
   <form t:type="form" zone="status">
 	<h1>Press 
 	<button t:type="submit" value="Here" event="eraseJunk">

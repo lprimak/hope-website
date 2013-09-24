@@ -8,15 +8,15 @@ DIV.t-beaneditor {
     background: #b7cae2;
 }    
 </style>
-
+<link rel="stylesheet" type="text/css" href="${context:css/base_layout.css}"/>
 </head>
-<body>
+<body class="stl">
 <t:zone t:id="birthdayZone">
-  <form t:type="form" zone="birthdayZone">
+  <form t:type="form" zone="birthdayZone" class="form-inline">
       <input t:type="datefield" value="birthdays.get(0).dob"/>
       <input t:type="submit" type="button" value="Submit"/>
   </form>
-  <t:beaneditform object="birthdays.get(0)" zone="birthdayZone" include="fullname,dob"/>
+  <t:beaneditform class="form-inline" object="birthdays.get(0)" zone="birthdayZone" include="fullname,dob"/>
   <br/>
 </t:zone>
   <br/>

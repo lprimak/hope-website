@@ -1,0 +1,27 @@
+/* 
+    Document   : base_layout
+    Created on : Sep 24, 2013, 7:30:35 PM
+    Author     : lprimak
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body.stl {
+    margin: 8px;
+}
+
+body.stl h1 {
+    font-size: 2em;
+}
+
+body.stl h3 {
+    font-size: 1.5em;
+}
+
+.input-group .form-control, .form-control {
+    width: auto;
+}
