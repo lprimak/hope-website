@@ -1,5 +1,6 @@
 package com.flowlogix.website.pages;
 
+import com.flowlogix.web.mixins.ColorHighlight;
 import com.flowlogix.web.mixins.DisableAfterSubmit;
 import com.flowlogix.web.services.annotations.AJAX;
 import lombok.Getter;
@@ -11,7 +12,6 @@ import org.apache.tapestry5.annotations.Secure;
 import org.apache.tapestry5.corelib.components.Zone;
 
 import com.flowlogix.website.EmailManagerLocal;
-import com.flowlogix.website.mixins.ColorHighlightOverride;
 import com.flowlogix.website.services.HopeModule;
 import javax.ejb.EJB;
 import javax.ejb.EJBException;
@@ -126,7 +126,8 @@ public class EmailManager
     @Inject private Request request;
     @Inject private ComponentResources cr;
     private @Parameter(defaultPrefix = BindingConstants.LITERAL, value = "#5AACFD") @NotNull String highlightColor;
-    private @Mixin ColorHighlightOverride cho;
+    private @Parameter int highlightInterval;
+    private @Mixin ColorHighlight cho;
     private @Mixin DisableAfterSubmit das;
     private @Inject @Symbol(HopeModule.JUNK_FOLDER_NAME) String junkFolderName;
     private @Inject @Symbol(HopeModule.DRAFT_FOLDER_NAME) String draftFolderName;
