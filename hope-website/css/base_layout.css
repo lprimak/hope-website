@@ -14,12 +14,21 @@ body.stl {
     margin: 8px;
 }
 
-body.stl h1 {
+.stl h1 {
     font-size: 2em;
 }
 
-body.stl h3 {
+.stl h3 {
     font-size: 1.5em;
+}
+
+.stl [data-beaneditor=true] {
+    background: #b7cae2;
+}
+
+/*TODO remove when https://issues.apache.org/jira/browse/TAP5-2182 is fixed */
+.stl .input-group-btn > .btn {
+    position: fixed;
 }
 
 .input-group .form-control, .form-control {

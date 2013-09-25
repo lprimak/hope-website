@@ -3,11 +3,6 @@
 	  xmlns:p="tapestry:parameter" xmlns:f="tapestry-library:flowlogix">
 <head>
 <title>Test Date Field</title>
-<style>
-DIV.t-beaneditor {
-    background: #b7cae2;
-}    
-</style>
 <link rel="stylesheet" type="text/css" href="${context:css/base_layout.css}"/>
 </head>
 <body class="stl">
@@ -16,7 +11,9 @@ DIV.t-beaneditor {
       <input t:type="datefield" value="birthdays.get(0).dob"/>
       <input t:type="submit" type="button" value="Submit"/>
   </form>
-  <t:beaneditform class="form-inline" object="birthdays.get(0)" zone="birthdayZone" include="fullname,dob"/>
+  <div data-beaneditor="true">
+    <t:beaneditform class="form-inline" object="birthdays.get(0)" zone="birthdayZone" include="fullname,dob"/>
+  </div>
   <br/>
 </t:zone>
   <br/>
