@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
-	  xmlns:p="tapestry:parameter" xmlns:f="tapestry-library:flowlogix">
-<head>
-<title>Test Date Field</title>
-<link rel="stylesheet" type="text/css" href="${context:css/base_layout.css}"/>
-</head>
-<body class="stl">
-<t:zone t:id="birthdayZone">
-  <form t:type="form" zone="birthdayZone" class="form-inline">
-      <input t:type="datefield" value="birthdays.get(0).dob"/>
-      <input t:type="submit" type="button" value="Submit"/>
-  </form>
-  <div data-beaneditor="true">
-    <t:beaneditform class="form-inline" object="birthdays.get(0)" zone="birthdayZone" include="fullname,dob"/>
-  </div>
-  <br/>
-</t:zone>
-  <br/>
-  <t:grid source="birthdays" include="fullname,dob"/>
+      xmlns:p="tapestry:parameter" xmlns:f="tapestry-library:flowlogix">
+    <head>
+        <title>Test Date Field</title>
+        <link rel="stylesheet" type="text/css" href="${context:css/base_layout.css}"/>
+    </head>
+    <body class="container stl">
+    <t:zone class="row" t:id="birthdayZone">
+        <form t:type="form" zone="birthdayZone" class="form-horizontal">
+            <div class="form-group">
+                <div class="col-md-3">
+                    <input t:type="datefield" value="birthdays.get(0).dob"/>
+                </div>
+                <div class="col-md-1">
+                    <input class="btn btn-primary" t:type="submit" type="button" value="Submit"/>
+                </div>
+            </div>
+        </form>
+        <div data-beaneditor="true" class="col-md-4">
+            <t:beaneditform class="form-inline" object="birthdays.get(0)" zone="birthdayZone" include="fullname,dob"/>
+        </div>
+        <br/>
+    </t:zone>
+    
+    <br/>
+    <div class="row col-md-4">
+        <t:grid source="birthdays" include="fullname,dob"/>
+    </div>
 </body>
 </html>

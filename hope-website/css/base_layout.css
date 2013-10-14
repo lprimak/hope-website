@@ -25,12 +25,3 @@ body.stl {
 .stl [data-beaneditor=true] {
     background: #b7cae2;
 }
-
-/*TODO remove when https://issues.apache.org/jira/browse/TAP5-2182 is fixed */
-.stl .input-group-btn > .btn {
-    position: fixed;
-}
-
-.input-group .form-control, .form-control {
-    width: auto;
-}
