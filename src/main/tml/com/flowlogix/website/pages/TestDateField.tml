@@ -18,7 +18,7 @@
             </div>
         </form>
         <div data-beaneditor="true" class="col-md-4">
-            <t:beaneditform class="form-inline" object="birthdays.get(0)" zone="birthdayZone" include="fullname,dob"/>
+            <t:beaneditform class="form-horizontal" object="birthdays.get(0)" zone="birthdayZone" include="fullname,dob"/>
         </div>
         <br/>
     </t:zone>
