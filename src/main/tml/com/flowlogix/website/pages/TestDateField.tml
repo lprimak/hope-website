@@ -4,13 +4,19 @@
     <head>
         <title>Test Date Field</title>
         <link rel="stylesheet" type="text/css" href="${context:css/base_layout.css}"/>
+        <style>
+            #date1-label {
+                padding-right: 0px;
+            }
+        </style>
     </head>
     <body class="container stl">
     <t:zone class="row" t:id="birthdayZone">
         <form t:type="form" zone="birthdayZone" class="form-horizontal">
             <div class="form-group">
-                <div class="col-md-3">
-                    <input t:type="datefield" value="birthdays.get(0).dob"/>
+                <label id="date1-label" for="date1" class="col-md-1 control-label">Select Date:</label>
+                <div class="col-md-2">
+                    <input t:type="datefield" t:id="date1" value="birthdays.get(0).dob"/>
                 </div>
                 <div class="col-md-1">
                     <input class="btn btn-primary" t:type="submit" type="button" value="Submit"/>
