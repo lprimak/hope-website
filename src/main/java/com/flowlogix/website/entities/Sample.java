@@ -1,9 +1,6 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.flowlogix.website.entities;
 
+import com.flowlogix.website.XEnum;
 import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.Column;
@@ -17,6 +14,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.Size;
 import lombok.Data;
+import org.apache.tapestry5.beaneditor.NonVisual;
 
 /**
  *
@@ -33,13 +31,17 @@ public class Sample implements Serializable
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @NonVisual
     private Long id;    
     
-    @Size(max = 300)
+    @Size(min = 5, max = 300)
     @Column(name = "fullName")
     private String fullName;
 
     @Column(name = "DoB")
     @Temporal(TemporalType.DATE)
     private Date DoB;
+    
+    private transient XEnum myEnum1;
+    private transient boolean checkBox1;
 }

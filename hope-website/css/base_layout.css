@@ -22,6 +22,7 @@ body.stl {
     font-size: 1.5em;
 }
 
-.stl [data-beaneditor=true] {
+.t-beaneditor {
     background: #b7cae2;
+    padding: 10px;
 }

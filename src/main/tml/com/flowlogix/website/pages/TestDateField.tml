@@ -11,8 +11,8 @@
         </style>
     </head>
     <body class="container stl">
-    <t:zone class="row" t:id="birthdayZone">
-        <form t:type="form" zone="birthdayZone" class="form-horizontal">
+    <t:zone t:id="birthdayZone">
+        <form t:type="form" zone="birthdayZone" class="row form-horizontal">
             <div class="form-group">
                 <label id="date1-label" for="date1" class="col-md-1 control-label">Select Date:</label>
                 <div class="col-md-2">
@@ -23,12 +23,14 @@
                 </div>
             </div>
         </form>
-        <div data-beaneditor="true" class="col-md-4">
-            <t:beaneditform class="form-horizontal" object="birthdays.get(0)" zone="birthdayZone" include="fullname,dob"/>
+        <div class="row">
+            <div class="col-md-8">
+                <t:beaneditform inputClass="col-md-8" object="birthdays.get(0)" zone="birthdayZone"/>            
+            </div>
         </div>
         <br/>
     </t:zone>
-    
+
     <br/>
     <div class="row col-md-4">
         <t:grid source="birthdays" include="fullname,dob"/>
