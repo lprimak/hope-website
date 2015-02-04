@@ -17,6 +17,7 @@
         <flowlogix.version>1.2.6</flowlogix.version>
         <yuicompressor.version>2.4.7-cust-tap-${tap.version}</yuicompressor.version>
         <tap-jquery.version>3.3.6</tap-jquery.version>
+        <lombok.version>1.16.0</lombok.version>
     </properties>
     
     <parent>
@@ -60,6 +61,12 @@
             <groupId>${project.groupId}</groupId>
             <artifactId>flowlogix-tapestry</artifactId>
             <version>${flowlogix.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tapestry</groupId>
+            <artifactId>plastic</artifactId>
+            <version>5.3.7-asm5</version>
+            <scope>${war-deps.scope}</scope>
         </dependency>
         <dependency>
             <groupId>org.jvnet.libpam4j</groupId>
