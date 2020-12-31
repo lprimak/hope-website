@@ -15,6 +15,9 @@ group :jekyll_plugins do
   gem 'jekyll-include-cache'
   gem 'jekyll-optional-front-matter'
   gem 'jekyll-remote-theme'
+  gem 'jekyll-paginate'
+  gem 'jekyll-gist'
+  gem 'jemoji'
 end
 
 
