@@ -13,5 +13,6 @@ group :jekyll_plugins do
   gem 'jekyll-feed'
   gem 'jekyll-seo-tag'
   gem 'jekyll-include-cache'
+  gem 'jekyll-optional-front-matter'
 end
 
