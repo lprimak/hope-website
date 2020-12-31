@@ -1,3 +1,16 @@
 remote_theme: mmistakes/minimal-mistakes
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: single
+      title: "Hope Web Site"
+      name: Hope
+
+optional_front_matter:
+  remove_originals: true
+
 plugins:
   - jekyll-include-cache
