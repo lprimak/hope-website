@@ -1,0 +1,9 @@
+#!/bin/bash -p
+
+letsencrypt_dir=$HOME/letsencrypt
+
+exec certbot renew -q \
+--webroot-path $HOME/payara/domains/website/docroot \
+--deploy-hook $HOME/bin/letsencrypt-payara \
+--logs-dir $letsencrypt_dir/var/log --config-dir $letsencrypt_dir \
+--work-dir $letsencrypt_dir/var/lib

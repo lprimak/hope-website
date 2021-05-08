@@ -2,4 +2,6 @@ target/
 *.jar
 *.war
 *.ear
-
+.*
+!/.gitignore
+_site/
