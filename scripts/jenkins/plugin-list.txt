@@ -1,0 +1,15 @@
+thinBackup
+configuration-as-code
+workflow-aggregator
+junit
+ant
+gradle
+maven-plugin
+timestamper
+blueocean
+pipeline-githubnotify-step
+github-pr-comment-build
+github-scm-trait-notification-context
+remote-file
+job-dsl
+pipeline-maven

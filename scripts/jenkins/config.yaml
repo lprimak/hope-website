@@ -1,0 +1,29 @@
+jenkins:
+  securityRealm:
+    local:
+      users:
+      - id: "admin"
+        name: "Administrator"
+        properties:
+        - mailer:
+            emailAddress: "admin@flowlogix.com"
+unclassified:
+  gitHubPluginConfig:
+    configs:
+    - credentialsId: "3cddf56f-7e59-4901-a779-b4326d2bb3c9"
+      name: "FlowLogix WebHook Auth"
+    hookSecretConfigs:
+    - credentialsId: "3cddf56f-7e59-4901-a779-b4326d2bb3c9"
+  globalDefaultFlowDurabilityLevel:
+    durabilityHint: PERFORMANCE_OPTIMIZED
+  location:
+    adminAddress: "admin@flowlogix.com"
+    url: "https://jenkins.hope.nyc.ny.us/"
+  buildDiscarders:
+    configuredBuildDiscarders:
+    - simpleBuildDiscarder:
+        discarder:
+          logRotator:
+            daysToKeepStr: "10"
+            numToKeepStr: "10"
+
