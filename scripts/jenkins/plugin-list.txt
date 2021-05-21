@@ -11,5 +11,5 @@ pipeline-githubnotify-step
 github-pr-comment-build
 github-scm-trait-notification-context
 remote-file
-job-dsl
 pipeline-maven
+jobConfigHistory
