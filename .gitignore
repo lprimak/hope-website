@@ -7,3 +7,5 @@ target/
 _site/
 domains/
 hope-passwordfile
+payara-domains
+payara-nodes

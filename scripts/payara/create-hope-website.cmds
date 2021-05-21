@@ -3,29 +3,21 @@ start-domain
 enable-secure-admin
 set configs.config.server-config.admin-service.das-config.dynamic-reload-enabled=false
 set configs.config.server-config.admin-service.das-config.autodeploy-enabled=false
+
 set configs.config.server-config.network-config.protocols.protocol.http-listener-2.ssl.cert-nickname=hope.crt 
 set configs.config.server-config.network-config.protocols.protocol.sec-admin-listener.ssl.cert-nickname=hope.crt
-set configs.config.server-config.network-config.network-listeners.network-listener.http-listener-1.protocol=pu-protocol
+
+# Port Unification
+# set configs.config.server-config.network-config.network-listeners.network-listener.http-listener-1.protocol=pu-protocol
 
 set configs.config.server-config.http-service.access-logging-enabled=true
-set configs.config.server-config.http-service.access-log.format=%header.X-Forwarded-For% %auth-user-name% %datetime% %request% %status% %response.length%
+set configs.config.server-config.http-service.access-log.format="%header.X-Forwarded-For% %auth-user-name% %datetime% %request% %status% %response.length%"
 set configs.config.server-config.http-service.access-log.max-history-files=50
 set configs.config.server-config.http-service.access-log.write-interval-seconds=30
 
-create-virtual-server --networkListeners=http-listener-1,http-listener-2 --hosts=hope.nyc.ny.us --state=on --target=server-config hope-website-redirects
-set configs.config.server-config.http-service.virtual-server.hope-website-redirects.property.redirect_1="from= url-prefix=https://me.hope.nyc.ny.us"
-set configs.config.server-config.http-service.virtual-server.hope-website-redirects.property.redirect_1.description="static web site"
-set configs.config.server-config.http-service.virtual-server.hope-website-redirects.property.redirect_2="from=// url-prefix=https://me.hope.nyc.ny.us"
-set configs.config.server-config.http-service.virtual-server.hope-website-redirects.property.redirect_2.description="static web site with slash"
-
-create-virtual-server --networkListeners=http-listener-1,http-listener-2 --hosts=jenkins.hope.nyc.ny.us --state=on --target=server-config jenkins
-
 set configs.config.server-config.http-service.virtual-server.server.docroot=\${user.home}/../website/contents
-set configs.config.server-config.http-service.virtual-server.hope-website-redirects.docroot=\${user.home}/../website/contents
-set configs.config.server-config.http-service.virtual-server.jenkins.docroot=\${user.home}/../website/contents
 
 create-system-properties cubus.config=\${user.home}/etc/cubus.properties
-create-system-properties JENKINS_HOME=\${user.home}/var/jenkins
 
 enable-asadmin-recorder
 
