@@ -6,3 +6,4 @@ target/
 !/.gitignore
 _site/
 domains/
+hope-passwordfile
