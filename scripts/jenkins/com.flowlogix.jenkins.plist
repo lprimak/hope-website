@@ -10,7 +10,7 @@
     <true/>
     <key>ProgramArguments</key>
     <array>
-      <string>/Users/software/payara/hope-jenkins/run-jenkins.sh</string>
+      <string>/Users/software/hope-website/scripts/jenkins/run-jenkins.sh</string>
     </array>
   </dict>
 </plist>
