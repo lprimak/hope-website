@@ -3,7 +3,7 @@ jenkins:
     local:
       users:
       - id: "admin"
-        name: "Administrator"
+        name: "Admin"
         properties:
         - mailer:
             emailAddress: "admin@flowlogix.com"
