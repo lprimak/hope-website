@@ -1,16 +1,31 @@
+credentials:
+  system:
+    domainCredentials:
+    - credentials:
+      - string:
+          description: "WebHook Secret - Token and Secret itself"
+          id: "3cddf56f-7e59-4901-a779-b4326d2bb3c9"
+          scope: GLOBAL
+          secret: "{AQAAABAAAAAwirFsgdUXrbHHrREGSEpt6PHKGDbO/M59f3/moyM+7OlyZqEt4koPvG1TtdjBnhDJyL3gL8ma9HZt0V50bQRzRg==}"
+      - usernamePassword:
+          description: "GitHub Repo Access Token"
+          id: "dd067490-e408-45cb-b911-d825906a05ee"
+          password: "{AQAAABAAAAAwQXHmD1qAEEN+tpkJbS1SPOKfgLP0JTp596PP8a6xf7+6sL3FBxkY6rxBltoMUvcOQTyG8FhesEWov+2n69hVCw==}"
+          scope: GLOBAL
+          username: "accesstoken"
 jenkins:
   agentProtocols:
   - "JNLP4-connect"
   - "Ping"
-  authorizationStrategy:
-    loggedInUsersCanDoAnything:
-      allowAnonymousRead: false
+  authorizationStrategy: "loggedInUsersCanDoAnything"
   crumbIssuer:
     standard:
       excludeClientIPFromCrumb: false
   disableRememberMe: false
   disabledAdministrativeMonitors:
   - "jenkins.diagnostics.ControllerExecutorsNoAgents"
+  - "org.jenkinsci.plugins.pipeline.maven.NonProductionGradeDatabaseWarningAdministrativeMonitor"
+  - "hudson.diagnosis.ReverseProxySetupMonitor"
   labelAtoms:
   - name: "master"
   markupFormatter: "plainText"
@@ -21,10 +36,28 @@ jenkins:
     all:
       name: "all"
   projectNamingStrategy: "standard"
-  quietPeriod: 5
+  quietPeriod: 120
   remotingSecurity:
     enabled: true
   scmCheckoutRetryCount: 0
+  securityRealm:
+    local:
+      allowsSignup: false
+      enableCaptcha: false
+      users:
+      - id: "admin"
+        name: "Admin"
+        properties:
+        - favoriting:
+            autofavoriteEnabled: true
+        - "favorite"
+        - "myView"
+        - preferredProvider:
+            providerId: "default"
+        - "timezone"
+        - "apiToken"
+        - mailer:
+            emailAddress: "admin@flowlogix.com"
   slaveAgentPort: -1
   updateCenter:
     sites:
@@ -39,6 +72,8 @@ security:
     creationOfLegacyTokenEnabled: false
     tokenGenerationOnCreationEnabled: false
     usageStatisticsEnabled: true
+  globalJobDslSecurityConfiguration:
+    useScriptSecurity: true
   sSHD:
     port: -1
 unclassified:
@@ -51,12 +86,46 @@ unclassified:
         teamCacheDuration: 0
   buildDiscarders:
     configuredBuildDiscarders:
-    - "jobBuildDiscarder"
+    - simpleBuildDiscarder:
+        discarder:
+          logRotator:
+            daysToKeepStr: "10"
+            numToKeepStr: "10"
+  buildStepOperation:
+    enabled: false
+  casCGlobalConfig:
+    configurationPath: "/Users/software/hope-website/scripts/jenkins/config.yaml"
+  email-ext:
+    adminRequiredForTemplateTesting: false
+    allowUnregisteredEnabled: false
+    charset: "UTF-8"
+    debugMode: false
+    defaultBody: |-
+      $PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:
+
+      Check console output at $BUILD_URL to view the results.
+    defaultContentType: "text/plain"
+    defaultSubject: "$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!"
+    defaultTriggerIds:
+    - "hudson.plugins.emailext.plugins.trigger.FailureTrigger"
+    mailAccount:
+      smtpPassword: "{AQAAABAAAAAQbQqthdXa08HpnAq+ZiHJ+wn+KdlrhZ+nPf7N86NG1Bk=}"
+    maxAttachmentSize: -1
+    maxAttachmentSizeMb: -1
+    precedenceBulk: false
+    watchingEnabled: false
   fingerprints:
     fingerprintCleanupDisabled: false
     storage: "file"
   gitHubConfiguration:
     apiRateLimitChecker: ThrottleForNormalize
+  gitHubPluginConfig:
+    configs:
+    - credentialsId: "3cddf56f-7e59-4901-a779-b4326d2bb3c9"
+      name: "FlowLogix WebHook Auth"
+    hookSecretConfigs:
+    - credentialsId: "3cddf56f-7e59-4901-a779-b4326d2bb3c9"
+    hookUrl: "https://jenkins.hope.nyc.ny.us/github-webhook/"
   gitSCM:
     addGitTagAction: false
     allowSecondFetch: false
@@ -65,8 +134,13 @@ unclassified:
     hideCredentials: false
     showEntireCommitSummaryInChanges: false
     useExistingAccountWithSameEmail: false
+  globalDefaultFlowDurabilityLevel:
+    durabilityHint: PERFORMANCE_OPTIMIZED
   junitTestResultStorage:
     storage: "file"
+  location:
+    adminAddress: "admin@flowlogix.com"
+    url: "https://jenkins.hope.nyc.ny.us/"
   mailer:
     charset: "UTF-8"
     useSsl: false
@@ -87,3 +161,9 @@ tool:
   mavenGlobalConfig:
     globalSettingsProvider: "standard"
     settingsProvider: "standard"
+  pipelineMaven:
+    triggerDownstreamUponResultAborted: false
+    triggerDownstreamUponResultFailure: false
+    triggerDownstreamUponResultNotBuilt: false
+    triggerDownstreamUponResultSuccess: true
+    triggerDownstreamUponResultUnstable: false

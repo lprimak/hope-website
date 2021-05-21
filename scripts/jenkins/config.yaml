@@ -8,6 +8,7 @@ jenkins:
         - mailer:
             emailAddress: "admin@flowlogix.com"
   authorizationStrategy: "loggedInUsersCanDoAnything"
+  quietPeriod: 120
 unclassified:
   gitHubPluginConfig:
     configs:
