@@ -91,7 +91,7 @@
     <repositories>
         <repository>
             <id>flowlogix-maven2</id>
-            <url>http://flowlogix-m2.googlecode.com/svn/trunk</url>
+            <url>https://raw.github.com/flowlogix/flowlogix-m2/master</url>
         </repository>
     </repositories>
 </project>
