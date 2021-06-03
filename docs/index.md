@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages - Old!
+## Welcome to GitHub Pages - Old!!
 
 You can use the [editor on GitHub](https://github.com/lprimak/hope-website/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
