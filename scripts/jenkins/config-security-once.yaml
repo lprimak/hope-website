@@ -13,4 +13,5 @@ credentials:
           password: "{AQAAABAAAAAwm/r+zZ/wBpQg/1e6aniT+Q54F9jvsC3wU29nfsutNbopiXYvbbSqBmhPCcXEZvKgmeRQYrlPh2CGzzERKt7vMg==}"
           scope: GLOBAL
           username: "accesstoken"
+          usernameSecret: true
 
