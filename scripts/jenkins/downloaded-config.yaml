@@ -104,7 +104,7 @@ jenkins:
   - "jenkins.diagnostics.ControllerExecutorsAgents"
   - "hudson.diagnosis.ReverseProxySetupMonitor"
   labelAtoms:
-  - name: "master"
+  - name: "built-in"
   markupFormatter: "plainText"
   mode: NORMAL
   myViewsTabBar: "standard"
