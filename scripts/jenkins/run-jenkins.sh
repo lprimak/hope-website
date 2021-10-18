@@ -4,6 +4,7 @@ SCRIPT_DIR=`dirname "$0"`
 
 jenkins_bin=$HOME/apps/jenkins/current
 
+sdk use java 11.0.12-zulu
 exec java -Xmx256m -DJENKINS_HOME=$HOME/var/jenkins \
 -Dhudson.security.ArtifactsPermission=true \
 -jar $jenkins_bin/jenkins.war \

@@ -2,11 +2,13 @@
 
 SCRIPT_DIR=`dirname "$0"`
 
-$SCRIPT_DIR/../hope-website-scripts/import-certs.sh 2>/dev/null
+$SCRIPT_DIR/../payara/import-certs.sh 2>/dev/null
 
 asadmin -I=false multimode << EOF
 set configs.config.server-config.network-config.network-listeners.network-listener.http-listener-2.enabled=false
 set configs.config.server-config.network-config.network-listeners.network-listener.http-listener-2.enabled=true
+set configs.config.server-config.network-config.network-listeners.network-listener.admin-listener.enabled=false
+set configs.config.server-config.network-config.network-listeners.network-listener.admin-listener.enabled=true
 EOF
 
 # haproxy
