@@ -1,11 +1,6 @@
 target/
-*.jar
-*.war
-*.ear
-.*
-!/.gitignore
-_site/
-domains/
+**/output
+**/.DS_Store
+**/.sdkmanrc
 hope-passwordfile
 payara-domains
-payara-nodes
