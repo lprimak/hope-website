@@ -17,4 +17,5 @@ socat tcp-connect:localhost:9999 -
 echo "commit ssl cert $HOME/var/ssl-links/fullchain.pem" | socat tcp-connect:localhost:9999 -
 
 # Email Notification
+# Original script located at https://github.com/hstock/certbot-renew-email
 $SCRIPT_DIR/certbot-notify-post-hook.py admin@flowlogix.com lprimak@hope.nyc.ny.us
