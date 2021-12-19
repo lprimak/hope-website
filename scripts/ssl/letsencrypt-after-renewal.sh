@@ -16,3 +16,5 @@ echo -e "set ssl cert $HOME/var/ssl-links/fullchain.pem <<\n$(cat $HOME/var/ssl-
 socat tcp-connect:localhost:9999 -
 echo "commit ssl cert $HOME/var/ssl-links/fullchain.pem" | socat tcp-connect:localhost:9999 -
 
+# Email Notification
+$SCRIPT_DIR/certbot-notify-post-hook.py admin@flowlogix.com lprimak@hope.nyc.ny.us
