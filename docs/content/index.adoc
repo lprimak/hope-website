@@ -1,0 +1,8 @@
+= Index Page
+:jbake-type: page
+:description: Index Page
+:idprefix:
+:jbake-title: hello title
+:jbake-status: published
+
+hello hello
