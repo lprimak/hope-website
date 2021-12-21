@@ -1,17 +1,13 @@
 <#include "header.ftl">
 
 	<#include "menu.ftl">
-
-	<#if (content.title)??>
-	<div class="page-header">
-		<h1>${content.title}</h1>
-	</div>
-	<#else></#if>
-
-	<p><em>${content.date?string("dd MMMM yyyy")}</em></p>
-
-	<p>${content.body}</p>
-
-	<hr />
+	
+	<div id="main">
+		<#assign post = content />
+		<#if (post??) >
+			<#include "page/content-single.ftl">
+		</#if>
+    </div>
+	<#include "commons/sidebar.ftl">
 
 <#include "footer.ftl">
