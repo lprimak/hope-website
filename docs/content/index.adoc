@@ -1,0 +1,30 @@
+= Lenny Primak & Flow Logix, Inc.
+:jbake-type: page
+:description: Home Page
+:idprefix:
+:linkattrs:
+:jbake-status: published
+
+== About Me
+link:/my-info/resume-pilot.html[Pilot Resume] +
+link:/my-info/resume-tech.html[Technology Resume] +
+link:/my-info/lenny-bio.html[Biography] +
+https://www.icloud.com/sharedalbum/#B0SG4TcsmGVcu2X[Pictures of Me, window="lenny-pix"] +
+link:[Photo Albums (future)]
+
+== Resources
+link:/mail[Webmail Access] +
+link:/ssh[Secure Terminal Access]
+
+== Links
+https://flowlogix.com[Flow Logix, Inc.^] +
+https://silverhawkaviation.com[Silverhawk Aviation^] +
+https://nycairservice.com[NYC Air Service^] +
+https://industriallogic.com[Industrial Logic, Inc.^] +
+https://killerinnovations.com[Killer Innovations Podcast^] +
+https://www.nycelite.com[NYC Elite Gymnastics, Inc.^] +
+
+== Patents
+https://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=6389448[Patent 6,389,448 - System and method for Load Balancing^] +
+https://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=6598077[Patent 6,598,077 - System and method for dynamic content routing^] +
+https://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=7443311[Patent 7,443,311 - Chair mounted system for control based on use of chair^]
