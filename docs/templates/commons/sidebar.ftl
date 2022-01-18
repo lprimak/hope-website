@@ -18,12 +18,14 @@
                 </header>
 
             <ul class="icons">
+                <#if (config.sidebar_social_show?boolean == true)>
+                    <hr>
+                    <h3>Social Links</h3>
+                    <#include "social.ftl">
+                </#if>
                 <#if (config.render_feed?boolean == true) >
                     <li><a href="${config.feed_file}" type="application/rss+xml"
                         target="_blank" title="RSS" class="fa fa-rss"></a></li>
-                </#if>
-                <#if (config.sidebar_social_show?boolean == true)>
-                	<#include "social.ftl">
                 </#if>
             </ul>
         </section>

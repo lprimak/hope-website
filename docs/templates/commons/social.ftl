@@ -2,6 +2,10 @@
 <li><a href="//github.com/${config.sidebar_social_github}" target="_blank" title="GitHub" class="fa fa-github"></a></li>
 </#if>
 
+<#if (config.sidebar_social_github_org?has_content) >
+<li><a href="//github.com/${config.sidebar_social_github_org}" target="_blank" title="GitHub Organization" class="fa fa-github"></a></li>
+</#if>
+
 <#if (config.sidebar_social_bitbucket?has_content) >
 <li><a href="//bitbucket.com/${config.sidebar_social_bitbucket}" target="_blank" title="Bitbucket" class="fa fa-bitbucket"></a></li>
 </#if>
