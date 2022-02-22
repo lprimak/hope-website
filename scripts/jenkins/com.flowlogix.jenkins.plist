@@ -12,5 +12,9 @@
     <array>
       <string>/Users/software/hope-website/scripts/jenkins/run-jenkins.sh</string>
     </array>
+    <key>StandardOutPath</key>
+    <string>/Users/software/var/log/jenkins.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/software/var/log/jenkins.log</string>
   </dict>
 </plist>

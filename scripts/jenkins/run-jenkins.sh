@@ -1,5 +1,6 @@
 #!/bin/zsh -pl
 
+source ~/.zshrc
 SCRIPT_DIR=`dirname "$0"`
 
 jenkins_bin=$HOME/apps/jenkins/current
