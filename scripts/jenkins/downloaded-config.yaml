@@ -103,6 +103,11 @@ jenkins:
   - "jenkins.security.QueueItemAuthenticatorMonitor"
   - "jenkins.diagnostics.ControllerExecutorsAgents"
   - "hudson.diagnosis.ReverseProxySetupMonitor"
+  globalNodeProperties:
+  - envVars:
+      env:
+      - key: "MAVEN_OPTS"
+        value: "-Dwebdriver.chrome.driver=^${HOME}/apps/chromedriver/current/chromedriver"
   labelAtoms:
   - name: "built-in"
   markupFormatter: "plainText"
@@ -189,8 +194,6 @@ unclassified:
     defaultSubject: "$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!"
     defaultTriggerIds:
     - "hudson.plugins.emailext.plugins.trigger.FailureTrigger"
-    mailAccount:
-      smtpPassword: "{AQAAABAAAAAQbQqthdXa08HpnAq+ZiHJ+wn+KdlrhZ+nPf7N86NG1Bk=}"
     maxAttachmentSize: -1
     maxAttachmentSizeMb: -1
     precedenceBulk: false
@@ -223,6 +226,8 @@ unclassified:
     adminAddress: "admin@flowlogix.com"
     url: "https://jenkins.hope.nyc.ny.us/"
   mailer:
+    authentication:
+      password: "{AQAAABAAAAAQHeNwJE3Wq3a47M4RpKDTX/h3tPIT6q9SA5Sz0KPFXE4=}"
     charset: "UTF-8"
     useSsl: false
     useTls: false
