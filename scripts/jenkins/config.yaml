@@ -82,6 +82,10 @@ jenkins:
       - "USER:View/Delete:admin"
       - "USER:View/Read:admin"
       - "USER:View/Read:anonymous"
+security:
+  scriptApproval:
+    approvedSignatures:
+    - "method java.lang.CharSequence isEmpty"
 unclassified:
   gitHubPluginConfig:
     configs:
