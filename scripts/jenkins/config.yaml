@@ -7,6 +7,11 @@ jenkins:
         properties:
         - mailer:
             emailAddress: "admin@flowlogix.com"
+  globalNodeProperties:
+  - envVars:
+      env:
+      - key: "MAVEN_OPTS"
+        value: "-Dwebdriver.chrome.driver=^${HOME}/apps/chromedriver/current/chromedriver"
   authorizationStrategy:
     globalMatrix:
       permissions:
@@ -95,11 +100,6 @@ unclassified:
     - credentialsId: "3cddf56f-7e59-4901-a779-b4326d2bb3c9"
   globalDefaultFlowDurabilityLevel:
     durabilityHint: PERFORMANCE_OPTIMIZED
-  globalNodeProperties:
-  - envVars:
-      env:
-      - key: "MAVEN_OPTS"
-        value: "-Dwebdriver.chrome.driver=^${HOME}/apps/chromedriver/current/chromedriver"
   location:
     adminAddress: "admin@flowlogix.com"
     url: "https://jenkins.hope.nyc.ny.us/"
