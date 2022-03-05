@@ -10,8 +10,13 @@ jenkins:
   globalNodeProperties:
   - envVars:
       env:
+      - key: "CHROME_BINARY"
+        value: "^${HOME}/apps/google-chrome/97/Google Chrome.app/Contents/MacOS/Google Chrome"
+      - key: "MAVEN_ADD_OPTIONS"
+        value: "-Dwebdriver.browser=firefox"
       - key: "MAVEN_OPTS"
-        value: "-Dwebdriver.chrome.driver=^${HOME}/apps/chromedriver/current/chromedriver"
+        value: "-Dwebdriver.chrome.driver=^${HOME}/apps/chromedriver/97/chromedriver\
+          \ -Dwebdriver.gecko.driver=^${HOMEBREW_PREFIX}/bin/geckodriver"
   authorizationStrategy:
     globalMatrix:
       permissions:
