@@ -13,3 +13,4 @@ github-scm-trait-notification-context
 remote-file
 pipeline-maven
 jobConfigHistory
+calendar-view
