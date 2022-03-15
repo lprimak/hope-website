@@ -122,7 +122,6 @@ jenkins:
   numExecutors: 2
   primaryView:
     all:
-      description: "Front Page"
       name: "all"
   projectNamingStrategy: "standard"
   quietPeriod: 5
@@ -153,8 +152,20 @@ jenkins:
     - id: "default"
       url: "https://updates.jenkins.io/update-center.json"
   views:
+  - calendar:
+      columns:
+      - "status"
+      - "weather"
+      - "jobName"
+      - "lastSuccess"
+      - "lastFailure"
+      - "lastDuration"
+      - "buildButton"
+      - "favoriteColumn"
+      includeRegex: ".*"
+      name: "Build Timeline"
+      recurse: true
   - all:
-      description: "Front Page"
       name: "all"
   viewsTabBar: "standard"
 globalCredentialsConfiguration:
