@@ -179,9 +179,6 @@ security:
     usageStatisticsEnabled: true
   sSHD:
     port: -1
-  scriptApproval:
-    approvedSignatures:
-    - "method java.lang.CharSequence isEmpty"
 unclassified:
   bitbucketEndpointConfiguration:
     endpoints:
