@@ -14,3 +14,5 @@ remote-file
 pipeline-maven
 jobConfigHistory
 calendar-view
+warnings-ng
+github-oauth
