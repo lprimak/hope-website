@@ -6,11 +6,55 @@
 :jbake-status: published
 
 == About Me
+Grew up in Ukraine until 12 years of age +
+Came to the USA at 13 years of age and lived in NYC +
+Child Prodigy Violinist until 14 years of age, played at Carnegie Hall +
+Worked at major Wall Street Investmend Banks, focusing on distributed real-time trading systems +
+Became a Pilot at 21 years of age +
+Inventor +
+Started own company at 26 years of age +
+Worked for ExpressJet Airlines since 2007 +
+Work for Silverhawk Aviation since 2021 +
+Problem-solver +
+Fix Appliances, HVAC and other things around the house
+
 link:/my-info/resume-pilot.html[Pilot Resume] +
 link:/my-info/resume-tech.html[Technology Resume] +
 link:/my-info/lenny-bio.html[Biography] +
 https://www.icloud.com/sharedalbum/#B0SG4TcsmGVcu2X[Pictures of Me, window="lenny-pix"] +
 link:[Photo Albums (future)]
+
+== Accompishments
+- Married and have a wonderful daughter
+- Played at Carnegie Hall
+- Achieved ATP - Highest level of Pilot Certificate
+- Earned a Rotorcraft-Helicopter Certificate
+- Jet Captain at Silverhawk Aviation
+- Won numerous patents
+- Started a Technology Company (flowlogix.com)
+
+== Family
+- Jill Primak
+- Anya Primak
+
+== BattleCop
+XXX link
+
+== Open Source Contributions
+- Payara
+- Hazelcast Hero
+- OpenSSL
+- Arquillian
+- Arquillian Suite Extension
+- Jakarta EL (Expression Language)
+- Jakarta Mojarra JSF
+- Jakarta Tyrus (WebSocket)
+- Eclipse MicroProfile
+- OmniFaces
+- Oshi
+- Eclipse Weld Project (CDI)
+- Eclipse Jersey
+- Underscore.js
 
 == Resources
 link:/mail[Webmail Access] +
