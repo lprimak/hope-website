@@ -2,7 +2,7 @@ jenkins:
   securityRealm:
     github:
       clientID: "617b74bd0af85c99f9bb"
-      clientSecret: "{AQAAABAAAAAw1Ey9YcfVaA3et0DyMgfscQcxE/wFmixFFotJSS+HgyUk608qEbnnyOG73paDin36/4eLGBTSS1eGvzEu6NYjow==}"
+      clientSecret: "{AQAAABAAAAAwuv+l5NW+/fst9dfKOuiohR/tdGbamC8auPE58n/Xvl/qjzoVImK71PRphb+tVc5o/3n6VNlFOEpT5uw8vGD90w==}"
       githubApiUri: "https://api.github.com"
       githubWebUri: "https://github.com"
       oauthScopes: "read:org,user:email,repo"
@@ -16,7 +16,7 @@ jenkins:
       authenticatedUserCreateJobPermission: false
       authenticatedUserReadPermission: true
       organizationNames: "flowlogix"
-      useRepositoryPermissions: true
+      useRepositoryPermissions: false
   globalNodeProperties:
   - envVars:
       env:
