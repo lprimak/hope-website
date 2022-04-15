@@ -17,3 +17,4 @@ warnings-ng
 github-oauth
 basic-branch-build-strategies
 pipeline-github
+disable-github-multibranch-status
