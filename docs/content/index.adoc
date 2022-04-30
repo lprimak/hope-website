@@ -28,7 +28,7 @@ Jet Captain at Silverhawk Aviation since 2021 +
 Problem-solver +
 
 === Family Life
-Married and have a wonderful daughter +
+Married to Jill and have a wonderful daughter Anya +
 Fix Appliances, HVAC and other things around the house
 
 link:/my-info/resume-pilot.html[Pilot Resume] +
@@ -36,10 +36,6 @@ link:/my-info/resume-tech.html[Technology Resume] +
 link:/my-info/lenny-bio.html[Biography] +
 https://www.icloud.com/sharedalbum/#B0SG4TcsmGVcu2X[Pictures of Me, window="lenny-pix"] +
 link:[Photo Albums (future)]
-
-== Family Life
-- Jill Primak
-- Anya Primak
 
 == Open Source Contributions
 - Payara
