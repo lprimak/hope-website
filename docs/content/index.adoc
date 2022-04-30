@@ -28,6 +28,7 @@ Jet Captain at Silverhawk Aviation since 2021 +
 Problem-solver +
 
 === Family Life
+Married and have a wonderful daughter +
 Fix Appliances, HVAC and other things around the house
 
 link:/my-info/resume-pilot.html[Pilot Resume] +
@@ -36,12 +37,7 @@ link:/my-info/lenny-bio.html[Biography] +
 https://www.icloud.com/sharedalbum/#B0SG4TcsmGVcu2X[Pictures of Me, window="lenny-pix"] +
 link:[Photo Albums (future)]
 
-== Things I want you to know about me
-- Played at Carnegie Hall
-- Started a Technology Company (flowlogix.com)
-
 == Family Life
-Married and have a wonderful daughter
 - Jill Primak
 - Anya Primak
 
@@ -67,33 +63,33 @@ link:/ssh[Secure Terminal Access]
 
 == Some of my favorite things
 https://flowlogix.com[Flow Logix, Inc.^] +
-My Corporate Entity for consulting and other endevours +
+My Corporate entity for consulting and other endevours. +
 
 === Technology
 https://killerinnovations.com[Killer Innovations Podcast^] +
-One of the Best Podcasts I listen to +
+One of the best Podcasts I listen to. +
 https://industriallogic.com[Industrial Logic, Inc.^] +
-Agile Coaching +
+Agile coaching. +
 https://payara.fish[Payara Platform^] +
-Java Application Platform and RUntime
+Java application platform and rUntime.
 
 === Aviation
 https://silverhawkaviation.com[Silverhawk Aviation^] +
-Best Charter and Fractional Company in the Midwest +
+Best charter and fractional company in the Midwest. +
 https://nycairservice.com[NYC Air Service^] +
-Best Flight Instruction and Air Tour in NYC +
+Best flight instruction and air tour in NYC. +
 
 === Music
 https://battlecopmusic.com[BattleCop^] +
-My Wife's Rock'n'Roll Band
+My wife's rock'n'noll band.
 
 === Child Development
 https://natureexplore.org[Nature Explore^] +
-My wife works there, Get those kids outside! +
+My wife works there. Get those kids outside! +
 https://dimensionsed.org[Dimensions Education^] +
-Early Childhood Education Institution +
+Early childhood education program. +
 https://www.nycelite.com[NYC Elite Gymnastics, Inc.^] +
-Best Gymnastics Schools in NYC
+Best gymnastics schools in NYC.
 
 == Patents
 https://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=6389448[Patent 6,389,448 - System and method for Load Balancing^] +
