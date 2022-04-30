@@ -46,7 +46,7 @@ Married and have a wonderful daughter
 - Anya Primak
 
 == BattleCop
-XXX link
+XXX link XXX
 
 == Open Source Contributions
 - Payara
