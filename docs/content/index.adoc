@@ -38,7 +38,7 @@ link:[Photo Albums (future)]
 - Anya Primak
 
 == BattleCop
-XXX link
+XXX link XXX
 
 == Open Source Contributions
 - Payara
