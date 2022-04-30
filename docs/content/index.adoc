@@ -6,16 +6,28 @@
 :jbake-status: published
 
 == About Me
+=== Early Years
 Grew up in Ukraine until 12 years of age +
 Came to the USA at 13 years of age and lived in NYC +
 Child Prodigy Violinist until 14 years of age, played at Carnegie Hall +
+
+=== Early Career
 Worked at major Wall Street Investmend Banks, focusing on distributed real-time trading systems +
 Became a Pilot at 21 years of age +
 Inventor +
 Started own company at 26 years of age +
+Won numerous patents +
+
+=== Aviation
+Achieved ATP - Highest level of Pilot Certificate
+Earned a Rotorcraft-Helicopter Certificate
 Worked for ExpressJet Airlines since 2007 +
-Work for Silverhawk Aviation since 2021 +
+Jet Captain at Silverhawk Aviation since 2021 +
+
+=== Software Development
 Problem-solver +
+
+=== Family Life
 Fix Appliances, HVAC and other things around the house
 
 link:/my-info/resume-pilot.html[Pilot Resume] +
@@ -25,15 +37,11 @@ https://www.icloud.com/sharedalbum/#B0SG4TcsmGVcu2X[Pictures of Me, window="lenn
 link:[Photo Albums (future)]
 
 == Things I want you to know about me
-- Married and have a wonderful daughter
 - Played at Carnegie Hall
-- Achieved ATP - Highest level of Pilot Certificate
-- Earned a Rotorcraft-Helicopter Certificate
-- Jet Captain at Silverhawk Aviation
-- Won numerous patents
 - Started a Technology Company (flowlogix.com)
 
-== Family
+== Family Life
+Married and have a wonderful daughter
 - Jill Primak
 - Anya Primak
 
