@@ -17,7 +17,7 @@ Started own technology company at 26 years of age.
 
 === Aviation
 Achieved an ATP certificate, which is the highest level of pilot certificate in existance +
-Earned a Rotorcraft-Helicopter certificate +
+Earned a Rotorcraft-Helicopter rating +
 Worked for ExpressJet Airlines since 2007 +
 Jet Captain at Silverhawk Aviation since 2021 +
 
@@ -26,10 +26,12 @@ Specializing in solving most difficult problems with highly performant and distr
 Highly experienced in Agile methodology, test-driven development, refactoring and complex debugging tasks.
 
 === Family Life
-Married to Jill and have a wonderful 6-year-old daughter Anya
+Married to the amazing Jill and have a wonderful 6-year-old daughter Anya +
+Live in beautiful Lincoln, Nebraska, the top 10 places to raise a family
 
 === Hobbies
-Fix Appliances, HVAC and other things around the house
+Fix Appliances, HVAC and other things around the house +
+Listen to music and podcasts
 
 link:/my-info/resume-pilot.html[Pilot Resume] +
 link:/my-info/resume-tech.html[Technology Resume] +
@@ -67,7 +69,7 @@ One of the best Podcasts I listen to. +
 https://industriallogic.com[Industrial Logic, Inc.^] +
 Agile coaching. +
 https://payara.fish[Payara Platform^] +
-Java application platform and rUntime.
+Java application platform and Runtime.
 
 === Aviation
 https://silverhawkaviation.com[Silverhawk Aviation^] +
