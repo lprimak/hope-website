@@ -7,28 +7,28 @@
 
 == About Me
 === Early Years
-Grew up in Ukraine until 12 years of age +
-Came to the USA at 13 years of age and lived in NYC +
-Child Prodigy Violinist until 14 years of age, played at Carnegie Hall +
+Grew up in Ukraine until 12 years of age, when my family decided to emigrate from the former USSR. I Came to the USA at 13 years of age. We settled in New York City. I was child prodigy ciolinist until 14 years of age, and played at Carnegie Hall.
 
-=== Early Career
-Worked at major Wall Street Investmend Banks, focusing on distributed real-time trading systems +
+=== Technology and Wall Street Career
+Got my first big break at major Wall Street investmend Bank at 17 years of age, focusing on distributed real-time trading systems. +
 Became a Pilot at 21 years of age +
-Inventor +
-Started own company at 26 years of age +
-Won numerous patents +
+Focusing on invention and innovation, winning numerous patents along thw way. +
+Started own technology company at 26 years of age.
 
 === Aviation
-Achieved ATP - Highest level of Pilot Certificate +
-Earned a Rotorcraft-Helicopter Certificate +
+Achieved an ATP certificate, which is the highest level of pilot certificate in existance +
+Earned a Rotorcraft-Helicopter certificate +
 Worked for ExpressJet Airlines since 2007 +
 Jet Captain at Silverhawk Aviation since 2021 +
 
 === Software Development
-Problem-solver +
+Specializing in solving most difficult problems with highly performant and distributed systems.
+Highly experienced in Agile methodology, test-driven development, refactoring and complex debugging tasks.
 
 === Family Life
-Married to Jill and have a wonderful daughter Anya +
+Married to Jill and have a wonderful 6-year-old daughter Anya
+
+=== Hobbies
 Fix Appliances, HVAC and other things around the house
 
 link:/my-info/resume-pilot.html[Pilot Resume] +
