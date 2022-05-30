@@ -7,37 +7,36 @@
 
 == About Me
 === Early Years
-Grew up in Ukraine until 12 years of age, when my family decided to emigrate from the former USSR. I Came to the USA at 13 years of age. We settled in New York City. I was child prodigy ciolinist until 14 years of age, and played at Carnegie Hall.
+I was born in 1974 in Ukraine- at the time, a Soviet republic.  Showing early musical abilities, at the age of three, I started studying violin, and went to a school for gifted children in Kyiv.  By the age of 7, I was an accomplished violin player, winning a number of Ukrainian competitions and placing in the top six in National (USSR) competitions.  
 
-=== Technology and Wall Street Career
-Got my first big break at major Wall Street investmend Bank at 17 years of age, focusing on distributed real-time trading systems. +
-Became a Pilot at 21 years of age +
-Focusing on invention and innovation, winning numerous patents along thw way. +
-Started own technology company at 26 years of age.
+In 1986, when I was twelve years old, my parents found an opportunity to leave the USSR. It was difficult to leave the Soviet Union and those who tried did so at great risk. In order to come to the United States, we had to go through Austria and Italy.  While in Italy, I took a computer class.  I always loved technology, but had never seen a computer before, and jumped at the chance to learn.  A year after we left our home in Kyiv, we arrived in the US and settled in New York City.  I resumed my violin studies, now at LaGuardia High School for Performing Arts, while continuing to learn about computer programming outside of class. Making it all the way to Carnegie Hall, I knew my love of technology was outpacing my desire to play the violin.
+
+=== Technology Career
+I got my first professional programming job at sixteen years old, I refined my skills and got my first taste of how to develop computer programs for paying customers.  
+Two years later, in 1988, I got my first financial services company job at CS First Boston, a Wall Street Investment Bank, where I got involved in a unique environment of services for traders developing distributed real-time trading systems. 
+
+In 1996, I started consulting in financial software development for Wall Street firms. On nights and weekends, I developed a framework for distributed computing and, in 2000 started my own software company, WARP Solutions.  In my role as President and CTO, my experience with distributed computing helped WARP create a number of innovative products.  Several of which I still hold patents for.
+
+After some time to travel, I returned to Wall Street. Shortly after, I stepped away from office life to pursue a career as a commercial pilot.
 
 === Aviation
+While I was moving forward in my technology career, I continued to explore another passion of mine- aviation. When I was nineteen, I got my Private Pilot Certificate in Airplanes, and soon thereafter received an Instrument Rating and ATP Certificate.  I also hold a Helicopter Rating, which I use for sightseeing and entertaining friends. 
+
+In 2007 I began my career as a commercial pilot, flying for the regional airline Express Jet, a now defunct carrier for United Express. During the COVID pandemic, Express Jet went bankrupt and I was grateful I never turned my back on computer programming. I have maintained my consultancy business part-time throughout my aviation career and was able to return to the tech field full-time in 2020. But my heart is in the sky, and when travel, and job opportunities, started to open up again, I began flying as Jet Captain for Silverhawk Aviation, a private charter company.
+
+=== Family Life and Hobbies
+In 2012, I met the love of my life, Jill Primak. The following year we got married on a yacht in the Hudson River. After living together in New York City for a few years, a very pregnant Jill and I relocated to her hometown of Lincoln, Nebraska. Our daughter Anya was born in December 2015. 
+
+Until moving to Lincoln in my early forties, I had only known apartment-life in dense cities. Now a homeowner, with property of my own, I find satisfaction in home improvement and fixing appliances which are inevitably always breaking. Fitness is very important to me and you will find me at the YMCA several times a week listening to my favorite podcasts (at double speed).
+
+== Aviation
 Achieved an ATP certificate, which is the highest level of pilot certificate in existance +
 Earned a Rotorcraft-Helicopter rating +
-Worked for ExpressJet Airlines since 2007 +
-Jet Captain at Silverhawk Aviation since 2021 +
+Type rated in Embraer Legacy / ERJ-145 and Citation 560 jet aircraft
 
-=== Software Development
+== Software Development
 Specializing in solving most difficult problems with highly performant and distributed systems.
 Highly experienced in Agile methodology, test-driven development, refactoring and complex debugging tasks.
-
-=== Family Life
-Married to the amazing Jill and have a wonderful 6-year-old daughter Anya +
-Live in beautiful Lincoln, Nebraska, the top 10 places to raise a family
-
-=== Hobbies
-Fix Appliances, HVAC and other things around the house +
-Listen to music and podcasts
-
-link:/my-info/resume-pilot.html[Pilot Resume] +
-link:/my-info/resume-tech.html[Technology Resume] +
-link:/my-info/lenny-bio.html[Biography] +
-https://www.icloud.com/sharedalbum/#B0SG4TcsmGVcu2X[Pictures of Me, window="lenny-pix"] +
-link:[Photo Albums (future)]
 
 == Open Source Contributions
 - Payara
@@ -58,6 +57,12 @@ link:[Photo Albums (future)]
 == Resources
 link:/mail[Webmail Access] +
 link:/ssh[Secure Terminal Access]
+
+link:/my-info/resume-pilot.html[Pilot Resume] +
+link:/my-info/resume-tech.html[Technology Resume] +
+link:/my-info/lenny-bio.html[Biography] +
+https://www.icloud.com/sharedalbum/#B0SG4TcsmGVcu2X[Pictures of Me, window="lenny-pix"] +
+link:[Photo Albums (future)]
 
 == Some of my favorite things
 https://flowlogix.com[Flow Logix, Inc.^] +
