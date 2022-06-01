@@ -3435,6 +3435,6 @@
 
 		}
 
-#sidebar > #recent-posts, .#blurb {
+#sidebar > #recent-posts, .blurb {
 	display: none;
 }
