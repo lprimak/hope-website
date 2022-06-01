@@ -3374,10 +3374,10 @@
 			border-top: 0;
 		}
 
-		.sidebar-links {
+		/* .sidebar-links {
 			font-size: smaller;
-		}
-		
+		} */
+
 		.sidebar-links, #menu .links {
 			list-style: none;
 			padding: 0;
