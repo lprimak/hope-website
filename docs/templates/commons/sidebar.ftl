@@ -20,7 +20,7 @@
             <ul class="icons">
                 <#if (config.sidebar_social_show?boolean == true)>
                     <hr>
-                    <h3>Social Links</h3>
+                    <h3>Social Networks</h3>
                     <#include "social.ftl">
                 </#if>
                 <#if (config.render_feed?boolean == true) >
