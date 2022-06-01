@@ -17,6 +17,19 @@
                     <p>${config.sidebar_intro_summary}</p>
                 </header>
 
+            <hr>
+            <ul class="sidebar-links links">
+                <#list config.site_menus_main as menuItem>
+        		 <li>
+                    <a href="<#if (config['site_menus_main_' + menuItem + '_url'] != "/")> ${content.rootpath}${config['site_menus_main_' + menuItem + '_url']}<#else> ${config.site_host}</#if>">
+                       
+                            <i class="${config['site_menus_main_' + menuItem + '_icon']}">&nbsp;</i>${config['site_menus_main_' + menuItem + '_label']}
+                        
+                    </a>
+                </li>
+				</#list>
+            </ul>
+
             <ul class="icons">
                 <#if (config.sidebar_social_show?boolean == true)>
                     <hr>

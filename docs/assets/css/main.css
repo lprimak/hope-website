@@ -3374,7 +3374,7 @@
 			border-top: 0;
 		}
 
-		#menu .links {
+		.sidebar-links, #menu .links {
 			list-style: none;
 			padding: 0;
 		}
