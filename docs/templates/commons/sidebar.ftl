@@ -3,21 +3,6 @@
 
     <!-- Intro -->
         <section id="intro">
-                <#if (config.sidebar_intro_pic_circle?boolean == true)>
-                    <a href="${content.rootpath}" class="logo"><img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${config.sidebar_intro_pic_src}" class="intro-circle" width="${config.sidebar_intro_pic_width}" alt="${config.sidebar_intro_pic_alt}" /></a>
-
-                <#elseif (config.sidebar_intro_pic_imperfect?boolean == true) >
-                    <a href="${content.rootpath}" class="logo"><img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${config.sidebar_intro_pic_src}" alt="${config.sidebar_intro_pic_alt}" /></a>
-                <#else>
-                    <img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${config.sidebar_intro_pic_src}" width="${config.sidebar_intro_pic_width}" alt="${config.sidebar_intro_pic_alt}" />
-                 </#if>
-
-                <header>
-                    <h2>${config.sidebar_intro_header}</h2>
-                    <p>${config.sidebar_intro_summary}</p>
-                </header>
-
-            <hr>
             <ul class="sidebar-links links">
                 <#list config.site_menus_main as menuItem>
         		 <li>
