@@ -2726,7 +2726,7 @@
 
 					.post > header .title {
 						-ms-flex: 0 1 auto;
-						margin: 0 0 2em 0;
+						margin: 0 0 .5em 0;
 						padding: 0;
 						text-align: center;
 					}
@@ -2792,14 +2792,14 @@
 			.post {
 				padding: 1.5em 1.5em 0.1em 1.5em ;
 				left: -1.5em;
-				margin: 0 0 2em 0;
+				margin: 0 0 1em 0;
 				width: calc(100% + (1.5em * 2));
 			}
 
 				.post > header {
 					padding: 3em 1.5em 0.5em 1.5em ;
 					left: -1.5em;
-					margin: -1.5em 0 1.5em 0;
+					margin: -1.5em 0 .5em 0;
 					width: calc(100% + 3em);
 				}
 
@@ -3190,7 +3190,7 @@
 		@media screen and (max-width: 736px) {
 
 			#wrapper {
-				padding: 1.5em;
+				padding: .5em;
 			}
 
 		}
@@ -3298,8 +3298,8 @@
 	@media screen and (max-width: 736px) {
 
 		#intro {
-			margin: 0 0 1.5em 0;
-			padding: 1.25em 0;
+			margin: 0 0 1em 0;
+			padding: .25em 0;
 		}
 
 			#intro > :last-child {
@@ -3374,9 +3374,11 @@
 			border-top: 0;
 		}
 
-		/* .sidebar-links {
-			font-size: smaller;
-		} */
+		@media screen and (max-width: 736px) {
+			.sidebar-links {
+				margin-bottom: 5%;
+			}	
+		}
 
 		.sidebar-links, #menu .links {
 			list-style: none;
