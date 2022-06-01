@@ -1,0 +1,36 @@
+= My Favorite Things
+:jbake-type: page
+:description: Some of my favorite things
+:idprefix:
+:linkattrs:
+:jbake-status: published
+
+== Flow Logix Inc
+https://flowlogix.com[Flow Logix, Inc.^] +
+My Corporate entity for consulting and other endevours. +
+
+=== Technology
+https://killerinnovations.com[Killer Innovations Podcast^] +
+One of the best Podcasts I listen to. +
+https://industriallogic.com[Industrial Logic, Inc.^] +
+Agile coaching. +
+https://payara.fish[Payara Platform^] +
+Java application platform and Runtime.
+
+=== Aviation
+https://silverhawkaviation.com[Silverhawk Aviation^] +
+Best charter and fractional company in the Midwest. +
+https://nycairservice.com[NYC Air Service^] +
+Best flight instruction and air tour in NYC. +
+
+=== Music
+https://battlecopmusic.com[BattleCop^] +
+My wife's rock'n'noll band.
+
+=== Child Development
+https://natureexplore.org[Nature Explore^] +
+My wife works there. Get those kids outside! +
+https://dimensionsed.org[Dimensions Education^] +
+Early childhood education program. +
+https://www.nycelite.com[NYC Elite Gymnastics, Inc.^] +
+Best gymnastics schools in NYC.
