@@ -17,7 +17,6 @@
 
             <ul class="icons">
                 <#if (config.sidebar_social_show?boolean == true)>
-                    <hr>
                     <h3>Social Networks</h3>
                     <#include "social.ftl">
                 </#if>
