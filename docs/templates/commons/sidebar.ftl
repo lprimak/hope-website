@@ -63,7 +63,7 @@
         </section>
 
     <!-- Tags List can be show/hide from config-->
-    <#if (config.sidebar_tags_show?boolean?? )>
+    <#if (config.sidebar_tags_show?boolean == true )>
         <section id="tags">
             <ul class="posts">
                 <header>

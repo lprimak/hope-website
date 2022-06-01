@@ -3434,3 +3434,7 @@
 			}
 
 		}
+
+#sidebar > #recent-posts {
+	display: none;
+}

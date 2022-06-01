@@ -1,0 +1,11 @@
+= Aviation
+:jbake-type: page
+:description: Lenny's Aviation Journey
+:idprefix:
+:linkattrs:
+:jbake-status: published
+
+Logged over 7,000 hours of flight time, including over 1,000 hours of Pilot-in-Command time +
+Achieved an ATP certificate, which is the highest level of pilot certificate +
+Earned a Rotorcraft-Helicopter rating +
+Type rated in Embraer Legacy / ERJ-145 and Citation 560 jet aircraft

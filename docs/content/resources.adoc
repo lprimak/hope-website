@@ -1,0 +1,16 @@
+= Resources
+:jbake-type: page
+:description: Resource Links and Resume
+:idprefix:
+:linkattrs:
+:jbake-status: published
+
+link:/mail[Webmail Access] +
+link:/ssh[Secure Terminal Access]
+
+=== (future)
+link:/my-info/resume-pilot.html[Pilot Resume] +
+link:/my-info/resume-tech.html[Technology Resume] +
+link:/my-info/lenny-bio.html[Biography] +
+https://www.icloud.com/sharedalbum/#B0SG4TcsmGVcu2X[Pictures of Me, window="lenny-pix"] +
+link:[Photo Albums (future)]
