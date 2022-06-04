@@ -1,6 +1,3 @@
-target/
-**/output
+output
 **/.DS_Store
 **/.sdkmanrc
-hope-passwordfile
-payara-domains
