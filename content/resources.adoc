@@ -8,7 +8,7 @@
 link:/mail[Webmail Access] +
 link:/ssh[Secure Terminal Access]
 
-=== (future)
+== (future)
 link:/my-info/resume-pilot.html[Pilot Resume] +
 link:/my-info/resume-tech.html[Technology Resume] +
 link:/my-info/lenny-bio.html[Biography] +

@@ -8,12 +8,12 @@
 Specializing in solving difficult problems with real-time, high performance and distributed systems. +
 Highly experienced in Agile methodology, test-driven development, refactoring and complex debugging tasks.
 
-=== Patents
+== Patents
 https://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=6389448[Patent 6,389,448 - System and method for Load Balancing^] +
 https://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=6598077[Patent 6,598,077 - System and method for dynamic content routing^] +
 https://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=7443311[Patent 7,443,311 - Chair mounted system for control based on use of chair^]
 
-=== Open Source Contributions
+== Open Source Contributions
 - https://payara.fish[Payara^]
 - https://hazelcast.com/dev-community/heroes/[Hazelcast Hero^]
 - OpenSSL
