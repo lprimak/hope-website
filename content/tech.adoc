@@ -1,4 +1,4 @@
-== Technology
+= Technology
 :jbake-type: page
 :description: Technology and Software Development
 :idprefix:
