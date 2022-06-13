@@ -22,6 +22,7 @@ https://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=7443311[Patent 7,443,31
 - Jakarta EL (Expression Language)
 - Jakarta Mojarra JSF
 - Jakarta Tyrus (WebSocket)
+- Jenkins CI
 - Eclipse MicroProfile
 - OmniFaces
 - Oshi
