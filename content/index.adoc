@@ -1,6 +1,6 @@
 = Lenny Primak & Flow Logix, Inc.
 :jbake-type: page
-:description: About me
+:description: A guy in Nebraska maintaining Open Source software
 :idprefix:
 :linkattrs:
 :jbake-status: published

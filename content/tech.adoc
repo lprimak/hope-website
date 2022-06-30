@@ -5,6 +5,8 @@
 :linkattrs:
 :jbake-status: published
 
+== A guy in Nebraska maintaining Open Source software
+
 Specializing in solving difficult problems with real-time, high performance and distributed systems. +
 Highly experienced in Agile methodology, test-driven development, refactoring and complex debugging tasks.
 
