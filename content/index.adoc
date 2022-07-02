@@ -5,8 +5,7 @@
 :linkattrs:
 :jbake-status: published
 
-[link=photos.html]
-image::https://cvws.icloud-content.com/S/AcxZB6NZrehu5jCxzYie0DG25gL_/IMG_0163.JPG?o=ArX-ZCbJN7P6hy4WkphbbDNUOyB5vGwiW4aywKq_Ba5j&v=1&z=https%3A%2F%2Fp28-content.icloud.com%3A443&x=1&a=CAog7me0_Gce2y01-qXi_UrP3GumiC2GBwDqEd-aX2lF0AwSZRDw142HnDAY8O6gjJwwIgEAUgS25gL_aiUb_uDRcLwbIJmdPng-1bU-DzVqJ6jQUp8x_IPS42liAlftT9BUciUZ2pzSxAgcpEhZZKAQKFRcWD8d1akE8Om5G-sCn88b3l3UZiOA&e=1656809338&r=70ef88d1-f08f-46a3-89ba-341173fd1ade-2&s=Zd68ZnpvNQbTfKfzWeiAe5NZEQY[Lenny Portrait,50%]
+image::https://cvws.icloud-content.com/S/AcxZB6NZrehu5jCxzYie0DG25gL_/IMG_0163.JPG?o=ArX-ZCbJN7P6hy4WkphbbDNUOyB5vGwiW4aywKq_Ba5j&v=1&z=https%3A%2F%2Fp28-content.icloud.com%3A443&x=1&a=CAog7me0_Gce2y01-qXi_UrP3GumiC2GBwDqEd-aX2lF0AwSZRDw142HnDAY8O6gjJwwIgEAUgS25gL_aiUb_uDRcLwbIJmdPng-1bU-DzVqJ6jQUp8x_IPS42liAlftT9BUciUZ2pzSxAgcpEhZZKAQKFRcWD8d1akE8Om5G-sCn88b3l3UZiOA&e=1656809338&r=70ef88d1-f08f-46a3-89ba-341173fd1ade-2&s=Zd68ZnpvNQbTfKfzWeiAe5NZEQY[Lenny Portrait,500vw,link=photos.html]
 
 == Early Years
 I was born in 1974 in Ukraine- at the time, a Soviet republic.  Showing early musical abilities at the age of three, I started studying violin, and went to a school for gifted children in Kyiv.  By the age of 7, I was an accomplished violin player, winning a number of Ukrainian competitions and placing in the top six in National (USSR) competitions.  
