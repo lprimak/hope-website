@@ -1,0 +1,15 @@
+= Photos
+:jbake-type: page
+:description: Photo albums
+:idprefix:
+:linkattrs:
+:jbake-status: published
+
+== Pictures of me
+
+pic 1
+pic 2
+
+== Photo Albums
+alb 1
+alb 2
