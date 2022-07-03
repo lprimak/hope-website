@@ -1,0 +1,17 @@
+= Photos
+:jbake-type: page
+:description: Photo albums
+:idprefix:
+:linkattrs:
+:jbake-status: published
+
+== Pictures of me
+image::img/pics/portrait.jp2[Photos of Me,300wv,link=https://www.icloud.com/sharedalbum/#B0S5Uzl7V4EGM5,window="_blank"]
+
+---
+== Photo Albums
+=== Wedding
+image::img/pics/wedding.jp2[Wedding Album,300wv,link=https://www.icloud.com/sharedalbum/#B0SGrq0zwGHNB9r,window="_blank"]
+
+=== Peru 2014
+image::img/pics/peru.jp2[Peru 2014,300wv,link=https://www.icloud.com/sharedalbum/#B0S5n8hH4cl4wk,window="_blank"]

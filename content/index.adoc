@@ -5,6 +5,8 @@
 :linkattrs:
 :jbake-status: published
 
+image::img/pics/portrait-plane.jp2[Lenny Portrait,500vw,link=photos.html]
+
 == Early Years
 I was born in 1974 in Ukraine- at the time, a Soviet republic.  Showing early musical abilities at the age of three, I started studying violin, and went to a school for gifted children in Kyiv.  By the age of 7, I was an accomplished violin player, winning a number of Ukrainian competitions and placing in the top six in National (USSR) competitions.  
 
