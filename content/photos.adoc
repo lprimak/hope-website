@@ -1,0 +1,17 @@
+= Photos
+:jbake-type: page
+:description: Photo albums
+:idprefix:
+:linkattrs:
+:jbake-status: published
+
+== Pictures of me
+image::https://cvws.icloud-content.com/S/AQmb4MYjyJj4B5uMGE3cBA2Tp4O7/IMG_1981.JPG?o=AvscO4hUvLcu0R95CRYiT48J6CAIOOR4tXBMXHtNp_0Y&v=1&z=https%3A%2F%2Fp28-content.icloud.com%3A443&x=1&a=CAogaU10rc5KCnKM8sntq6I5Q-rOiAZD6rOxkiUd_qzeQxgSZRCGqKGKnDAYhr-0j5wwIgEAUgSTp4O7aiXIpQPryymYmR_3nE0ajUZ0S_OmWAtMazgllW7mhufVagAH9GcmciVMO0hH8TaRSr2zk8L_L6x9Tf96nvvFfpPS_vcy00oxNOJ3QztO&e=1656815951&r=61b15a4f-b8e3-4d16-aecc-b93325aa47dd-1&s=KSEE7P6BZnzwZTXwHtyBAkhpz30[Photos of Me,300wv,link=https://www.icloud.com/sharedalbum/#B0S5Uzl7V4EGM5,window="_blank"]
+
+---
+== Photo Albums
+=== Wedding
+image::https://cvws.icloud-content.com/S/ARTZmC7hEz-BKzRgHul56zOnmx4M/jilllenny2013816-282.jpg?o=Ak-pPgnIZo2nW4oefRly_oxLOq1vkcxAflk5vq2s2_RX&v=1&z=https%3A%2F%2Fp28-content.icloud.com%3A443&x=1&a=CAog6eoyfP9KUYs9f9LLvCpjrIpnvvEzNDafQVFdfgD2MV4SZRDOwO2KnDAYzteAkJwwIgEAUgSnmx4MaiW_SPsfqItsP_RXN723kX9pM_WhTPKHCBeJklWwTo8cGbZA1OXiciXnMV1hOjZedh4Thby4ilVUDdKfUm-veXpZlt6q3vhfTVC9dhvV&e=1656817200&r=509ec7b2-00de-499a-9d6a-8df7556142b8-3&s=fhOhD5stI0z3281DhWSKibfIQcc[Wedding Album,300wv,link=https://www.icloud.com/sharedalbum/#B0SGrq0zwGHNB9r,window="_blank"]
+
+=== Peru 2014
+image::https://cvws.icloud-content.com/S/ASfGMNn58V1j8pZlXkmYWN2rTP1t/IMG_0479.JPG?o=AlCkLrHLdhe_t8Gq5Q6QhsVPIbq77reFu-C5MDIlTrCv&v=1&z=https%3A%2F%2Fp28-content.icloud.com%3A443&x=1&a=CAogTpC4f2TFH9uvnb-MO4f_FcFyVEqc4rWIzaD-VSTdTH4SZRCfkYmLnDAYn6ickJwwIgEAUgSrTP1taiVb23_w5jgC6ZvS9lQepMZesmva0EFv2pYtPlgheE4CmqWiUEI_ciVSQSpiY03OPSSeH5vHnPvKMiS5iw7xC4wLBA75mwbrxMuPZSBQ&e=1656817652&r=478928cf-4501-48ac-b0b2-be8a41d4270c-2&s=wljdWmfggKWTGnxOF3t0-YzxgJ0[Peru 2014,300wv,link=https://www.icloud.com/sharedalbum/#B0S5n8hH4cl4wk,window="_blank"]
