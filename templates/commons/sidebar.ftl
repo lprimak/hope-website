@@ -15,6 +15,13 @@
 				</#list>
             </ul>
 
+            <#if (config.sidebar_social_email?has_content) >
+                <ul class="icons">
+                    <h3>Contact</h3>
+                    <li><a href="mailto:${config.sidebar_social_email}" title="Email" class="fa fa-envelope"> via Email</a></li><br>
+                </ul>
+            </#if>
+
             <ul class="icons">
                 <#if (config.sidebar_social_show?boolean == true)>
                     <h3>Social Networks</h3>
