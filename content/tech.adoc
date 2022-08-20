@@ -20,6 +20,7 @@ https://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=7443311[Patent 7,443,31
 ++++
 
 == Open Source Contributions
+- https://github.com/flowlogix/flowlogix[Flow Logix Utility Library^]
 - https://payara.fish[Payara^]
 - https://hazelcast.com/dev-community/heroes/[Hazelcast Hero^]
 - OpenSSL

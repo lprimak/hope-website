@@ -6,7 +6,8 @@
 :jbake-status: published
 
 https://apps.hope.nyc.ny.us/mail[Webmail Access] +
-https://apps.hope.nyc.ny.us/ssh[Secure Terminal Access]
+https://apps.hope.nyc.ny.us/ssh[Secure Terminal Access] +
+https://apps.hope.nyc.ny.us/jee-examples[FlowLogix Sample Program]
 
 == (future)
 link:/my-info/resume-pilot.html[Pilot Resume] +
