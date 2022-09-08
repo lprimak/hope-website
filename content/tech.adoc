@@ -30,6 +30,7 @@ https://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=7443311[Patent 7,443,31
 - Jakarta Mojarra JSF
 - Jakarta Tyrus (WebSocket)
 - Jenkins CI
+- Eclipse Jetty
 - Eclipse MicroProfile
 - OmniFaces
 - Oshi
