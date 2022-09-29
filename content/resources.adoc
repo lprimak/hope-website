@@ -6,6 +6,7 @@
 :jbake-status: published
 
 https://apps.hope.nyc.ny.us/mail[Webmail Access] +
+https://apps.hope.nyc.ny.us/em[Email Manager] +
 https://apps.hope.nyc.ny.us/jee-examples[FlowLogix Sample Program^]
 
 ////
