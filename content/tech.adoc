@@ -26,6 +26,7 @@ https://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=7443311[Patent 7,443,31
 - OpenSSL
 - Arquillian
 - Arquillian Suite Extension
+- Apache Shiro
 - Jakarta EL (Expression Language)
 - Jakarta Mojarra JSF
 - Jakarta Tyrus (WebSocket)
@@ -37,3 +38,6 @@ https://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=7443311[Patent 7,443,31
 - Eclipse Weld Project (CDI)
 - Eclipse Jersey
 - Underscore.js
+
+---
+View my link:resume/resume.html[Resume]
