@@ -10,5 +10,5 @@ https://apps.hope.nyc.ny.us/em[Email Manager] +
 https://apps.hope.nyc.ny.us/jee-examples[FlowLogix Sample Program^]
 
 == Resume
-link:resume/pilot-resume.html[Pilot Resume] +
-link:resume/resume.html[Technology Resume] +
+link:resume/pilot-resume.html[Pilot Resume^] +
+link:resume/resume.html[Technology Resume^] +

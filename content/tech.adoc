@@ -40,4 +40,4 @@ https://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=7443311[Patent 7,443,31
 - Underscore.js
 
 ---
-View my link:resume/resume.html[Resume]
+View my link:resume/resume.html[Resume^]

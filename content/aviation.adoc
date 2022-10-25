@@ -12,4 +12,4 @@ Type rated in Embraer Legacy / ERJ-145 and Citation 560 jet aircraft
 
 Currently flying for https://silverhawkaviation.com[Silverhawk Aviation^]
 
-View my link:resume/pilot-resume.html[Resume]
+View my link:resume/pilot-resume.html[Resume^]
