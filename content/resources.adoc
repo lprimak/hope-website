@@ -7,15 +7,15 @@
 
 == Utilities
 https://apps.hope.nyc.ny.us/mail[Webmail Access] +
-https://apps.hope.nyc.ny.us/em[Email Manager]
+https://apps.hope.nyc.ny.us/em[Email Manager] +
 
 == Development
 https://jenkins.hope.nyc.ny.us[Jenkins build system] +
-https://nexus.hope.nyc.ny.us[Sonatype Nexus repository]
+https://nexus.hope.nyc.ny.us[Sonatype Nexus repository] +
 
 == Samples
 https://apps.hope.nyc.ny.us/jee-examples[FlowLogix Sample Program^]
 
 == Resume
-link:resume/pilot-resume.html[Pilot Resume^] +
-link:resume/resume.html[Technology Resume^] +
+link:resume/pilot-resume.html[Pilot Resume^] (link:resume/pilot-resume.pdf[PDF^]) +
+link:resume/resume.html[Technology Resume^] (link:resume/resume.pdf[PDF^]) +
