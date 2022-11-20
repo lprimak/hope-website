@@ -1,6 +1,6 @@
 = My Favorite Things
 :jbake-type: page
-:description: Some of my favorite things
+:description: Some of my favorite links
 :idprefix:
 :linkattrs:
 :jbake-status: published
