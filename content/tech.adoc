@@ -16,7 +16,7 @@ https://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=6598077[Patent 6,598,07
 https://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=7443311[Patent 7,443,311 - Chair mounted system for control based on use of chair^]
 
 == Memberships and Associations
-- Member of ASF - Apache Software Foundation (Shiro Committer)
+- Member of ASF - Apache Software Foundation (Shiro PMC)
 - Member of Eclipse Foundation (Jakarta EE)
 
 ++++
@@ -30,7 +30,7 @@ https://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=7443311[Patent 7,443,31
 - OpenSSL
 - Arquillian
 - Arquillian Suite Extension
-- Apache Shiro
+- Apache Shiro PMC member
 - Jakarta EL (Expression Language)
 - Jakarta Mojarra JSF
 - Jakarta Tyrus (WebSocket)
