@@ -1,4 +1,4 @@
-= Lenny Primak & Flow Logix, Inc.
+= Lenny Primak
 :jbake-type: page
 :description: A guy in Nebraska maintaining Open Source software
 :idprefix:

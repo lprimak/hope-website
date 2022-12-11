@@ -1,0 +1,9 @@
+= Blogs
+:jbake-type: page
+:description: Blogs - Personal and Sensible Development
+:idprefix:
+:linkattrs:
+:jbake-status: published
+
+https://lprimak.tumblr.com[Personal Blog^] +
+https://sensibledev.tumblr.com[Sensible Development Blog^]
