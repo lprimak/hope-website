@@ -7,4 +7,4 @@
 
 https://lprimak.tumblr.com[Personal Blog^] +
 https://sensibledev.tumblr.com[Sensible Development Blog^] +
-https://medium.com/@lennyprimak[Medium Blog^]
+https://medium.com/@lprimak[Medium Blog^]
