@@ -3,3 +3,5 @@ output
 **/.sdkmanrc
 /pom.xml
 .idea
+**target
+**output
