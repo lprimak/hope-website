@@ -1,7 +1,6 @@
 output
 **/.DS_Store
 **/.sdkmanrc
-/pom.xml
 .idea
 **target
 **output
