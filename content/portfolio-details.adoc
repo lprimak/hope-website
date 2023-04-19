@@ -1,0 +1,6 @@
+= Blogs
+:jbake-type: portfolio-details
+:description: Blog Sample *TBR*
+:idprefix:
+:linkattrs:
+:jbake-status: published

@@ -1,0 +1,6 @@
+= Blogs
+:jbake-type: inner-page
+:description: Blog Sample *TBR*
+:idprefix:
+:linkattrs:
+:jbake-status: published
