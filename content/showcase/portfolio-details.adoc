@@ -1,6 +1,7 @@
-= Blogs
-:jbake-type: portfolio-details
-:description: Blog Sample *TBR*
+= Portfolio
+:jbake-type: showcase
+:jbake-component: portfolio
+:description: Portfolio Details *TBR*
 :idprefix:
 :linkattrs:
 :jbake-status: published

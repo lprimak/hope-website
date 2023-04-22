@@ -1,5 +1,6 @@
 = Blogs
-:jbake-type: blog
+:jbake-type: showcase
+:jbake-component: blog
 :description: Blog Sample *TBR*
 :idprefix:
 :linkattrs:

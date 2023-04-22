@@ -1,5 +1,6 @@
 = Showcase
 :jbake-type: showcase
+:jbake-component: main
 :description: Showcase Page
 :idprefix:
 :linkattrs:
