@@ -1,0 +1,8 @@
+= Showcase
+:jbake-type: showcase
+:description: Showcase Page
+:idprefix:
+:linkattrs:
+:jbake-status: published
+
+Hello Showcase
