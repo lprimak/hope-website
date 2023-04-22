@@ -5,4 +5,4 @@
 :linkattrs:
 :jbake-status: published
 
-Hello Showcase
+Hello Showcase Index
