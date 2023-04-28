@@ -5,6 +5,7 @@
 :linkattrs:
 :jbake-status: published
 
+[.photos.transform-left]
 image::img/pics/portrait-plane.jpg[Lenny Portrait,500vw,link=photos.html]
 
 == Early Years
