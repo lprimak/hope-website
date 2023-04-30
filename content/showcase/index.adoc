@@ -1,0 +1,9 @@
+= Showcase
+:jbake-type: showcase
+:jbake-component: main
+:description: Showcase Page
+:idprefix:
+:linkattrs:
+:jbake-status: published
+
+Hello Showcase Index

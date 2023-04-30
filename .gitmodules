@@ -1,6 +1,6 @@
-[submodule "website-template"]
-	path = website-template
-	url = git@github.com:flowlogix/website-template.git
+[submodule "herobiz-website-template"]
+	path = herobiz-website-template
+	url = git@github.com:flowlogix/herobiz-website-template.git
 [submodule "jbake-maven"]
 	path = jbake-maven
 	url = git@github.com:flowlogix/jbake-maven.git

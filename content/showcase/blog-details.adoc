@@ -1,0 +1,7 @@
+= Blog Details
+:jbake-type: showcase
+:jbake-component: blog-details
+:description: Blog Sample *TBR*
+:idprefix:
+:linkattrs:
+:jbake-status: published
