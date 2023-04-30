@@ -1,4 +1,4 @@
-= My Favorite Things
+= Useful Things
 :jbake-type: page
 :description: Some of my favorite links
 :idprefix:
