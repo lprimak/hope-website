@@ -9,7 +9,7 @@
 [.photos]
 image::img/pics/portrait.jpg[Photos of Me,300wv,link=https://www.icloud.com/sharedalbum/#B0S5Uzl7V4EGM5,window="_blank"]
 
----
+'''
 == Photo Albums
 [.photos,cols="1a, 1a"]
 |===
