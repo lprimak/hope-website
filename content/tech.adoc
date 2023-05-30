@@ -17,6 +17,7 @@ https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7443311[Patent 
 
 == Memberships and Associations
 - Member of ASF - Apache Software Foundation (Shiro PMC)
+- Jakarta EE Contributor
 - Member of Eclipse Foundation (Jakarta EE)
 
 ++++
