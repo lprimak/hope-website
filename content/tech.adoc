@@ -28,10 +28,11 @@ https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7443311[Patent 
 - https://github.com/flowlogix/flowlogix[Flow Logix Jakarta EE Components^]
 - https://payara.fish[Payara^]
 - https://hazelcast.com/dev-community/heroes/[Hazelcast Hero^]
+- Apache Shiro PMC member
+- Apache Maven
 - OpenSSL
 - Arquillian
 - Arquillian Suite Extension
-- Apache Shiro PMC member
 - Jakarta EL (Expression Language)
 - Jakarta Mojarra JSF
 - Jakarta Tyrus (WebSocket)
