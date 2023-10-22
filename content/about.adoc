@@ -8,7 +8,7 @@
 [.photos.transform-left]
 image::img/pics/portrait-plane.jpg[Lenny Portrait,500vw,375vh,link=photos.html]
 
-== Early Years
+== Early Years XXX 2013***
 I was born in 1974 in Ukraine- at the time, a Soviet republic.  Showing early musical abilities at the age of three, I started studying violin, and went to a school for gifted children in Kyiv.  By the age of 7, I was an accomplished violin player, winning a number of Ukrainian competitions and placing in the top six in National (USSR) competitions.  
 
 In 1986, when I was twelve years old, my parents found an opportunity to leave the USSR. It was difficult to leave the Soviet Union and those who tried did so at great risk. In order to come to the United States, we had to go through Austria and Italy.  While in Italy, I took a computer class.  I always loved technology, but had never seen a computer before, and jumped at the chance to learn.  A year after we left our home in Kyiv, we arrived in the US and settled in New York City.  I resumed my violin studies, now at LaGuardia High School for Performing Arts, while continuing to learn about computer programming outside of class. Making it all the way to Carnegie Hall, I knew my love of technology was outpacing my desire to play the violin.
