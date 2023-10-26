@@ -30,6 +30,7 @@ https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7443311[Patent 
 - https://hazelcast.com/dev-community/heroes/[Hazelcast Hero^]
 - Apache Shiro PMC member
 - Apache Maven
+- PrimeFaces
 - OpenSSL
 - Arquillian
 - Arquillian Suite Extension
