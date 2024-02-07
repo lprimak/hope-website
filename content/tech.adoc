@@ -28,7 +28,7 @@ https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7443311[Patent 
 - https://github.com/flowlogix/flowlogix[Flow Logix Jakarta EE Components^]
 - https://payara.fish[Payara^]
 - https://hazelcast.com/dev-community/heroes/[Hazelcast Hero^]
-- Apache Shiro project management committee member
+- Apache Shiro Security management committee member
 - Jakarta EE Platform
 - Apache Maven
 - PrimeFaces
