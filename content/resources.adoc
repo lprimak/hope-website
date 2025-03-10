@@ -6,7 +6,6 @@
 :jbake-status: published
 
 == Utilities
-https://apps.hope.nyc.ny.us/mail[Webmail Access^] +
 https://apps.hope.nyc.ny.us/em[Email Manager^] +
 
 == Development
