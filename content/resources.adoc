@@ -12,6 +12,9 @@ https://apps.hope.nyc.ny.us/em[Email Manager^] +
 https://jenkins.hope.nyc.ny.us[Jenkins build system^] +
 https://nexus.hope.nyc.ny.us[Sonatype Nexus repository^] +
 
+== Aviation
+https://logbook.flowlogix.com[Pilot Logbook^] +
+
 == Samples
 https://apps.hope.nyc.ny.us/jee-examples[FlowLogix Sample Program^]
 
