@@ -5,7 +5,7 @@
 :linkattrs:
 :jbake-status: published
 
-Logged almost 8,000 hours of flight time, including over 1,300 hours of Jet Pilot-in-Command time +
+Logged over 8,300 hours of flight time, including over 1,650 hours of Jet Pilot-in-Command time +
 Achieved an ATP certificate, which is the highest level of pilot certificate +
 Earned a Rotorcraft-Helicopter rating +
 Type rated in Embraer Legacy / ERJ-145 and Citation 560 jet aircraft
