@@ -16,7 +16,7 @@ https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6598077[Patent 
 https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7443311[Patent 7,443,311 - Chair mounted system for control based on use of chair^]
 
 == Memberships and Associations
-- Member of ASF - Apache Software Foundation (Shiro PMC)
+- Member of Apache Software Foundation - Shiro PMC Chair
 - Jakarta EE Contributor
 - Member of Eclipse Foundation (Jakarta EE)
 
@@ -28,7 +28,7 @@ https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7443311[Patent 
 - https://github.com/flowlogix/flowlogix[Flow Logix Jakarta EE Components^]
 - https://payara.fish[Payara^]
 - https://hazelcast.com/dev-community/heroes/[Hazelcast Hero^]
-- Apache Shiro Security management committee member
+- Apache Shiro Security PMC Chair
 - Jakarta EE Platform
 - Apache Maven
 - PrimeFaces
