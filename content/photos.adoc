@@ -7,23 +7,23 @@
 
 == Pictures of me
 [.photos]
-image::img/pics/portrait.jpg[Photos of Me,300wv,link=https://www.icloud.com/sharedalbum/#B0S5Uzl7V4EGM5,window="_blank"]
+image::img/pics/portrait.jpg[Photos of Me,300wv,link=https://photos.hope.nyc.ny.us/s/my-pictures",window="_blank"]
 
 '''
 == Photo Albums
 [.photos,cols="1a, 1a"]
 |===
 | === Wedding
-image::img/pics/wedding.jpg[Wedding Album,300wv,link=https://www.icloud.com/sharedalbum/#B0SGrq0zwGHNB9r,window="_blank"]
+image::img/pics/wedding.jpg[Wedding Album,300wv,link=https://photos.hope.nyc.ny.us/s/wedding,window="_blank"]
 === Engagement
-image::img/pics/engagement.jpg[Engagement Shoot,300wv,link=https://www.icloud.com/sharedalbum/#B0SGI9HKKGROAUe,window="_blank"]
+image::img/pics/engagement.jpg[Engagement Shoot,300wv,link=https://photos.hope.nyc.ny.us/s/engagement,window="_blank"]
 
 | === Peru 2014
-image::img/pics/peru.jpg[Peru 2014,300wv,link=https://www.icloud.com/sharedalbum/#B0S5n8hH4cl4wk,window="_blank"]
+image::img/pics/peru.jpg[Peru 2014,300wv,link=https://photos.hope.nyc.ny.us/s/travel-peru,window="_blank"]
 
 === Alaska 2012
-image::img/pics/denali.jpg[Peru 2014,300wv,link=https://www.icloud.com/sharedalbum/#B0S59UlCqRk00x,window="_blank"]
+image::img/pics/denali.jpg[Peru 2014,300wv,link=https://photos.hope.nyc.ny.us/s/travel-alaska,window="_blank"]
 
 === Wedding - Others' perspective
-image::img/pics/wedding_others.jpg[Peru 2014,300wv,link=https://www.icloud.com/sharedalbum/#B0SJ0DiRHJtzOdj,window="_blank"]
+image::img/pics/wedding_others.jpg[Peru 2014,300wv,link=https://photos.hope.nyc.ny.us/s/wedding-others-perspective,window="_blank"]
 |===
