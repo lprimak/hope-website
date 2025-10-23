@@ -9,8 +9,8 @@
 https://apps.hope.nyc.ny.us/em[Email Manager^] +
 
 == Development
-https://jenkins.hope.nyc.ny.us[Jenkins build system^] +
-https://nexus.hope.nyc.ny.us[Sonatype Nexus repository^] +
+https://jenkins.flowlogix.com[Jenkins build system^] +
+https://nexus.flowlogix.com[Sonatype Nexus repository^] +
 
 == Aviation
 https://logbook.flowlogix.com[Pilot Logbook^] +
