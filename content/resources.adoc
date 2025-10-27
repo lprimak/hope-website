@@ -9,6 +9,7 @@
 https://apps.hope.nyc.ny.us/em[Email Manager^] +
 
 == Development
+https://start.flowlogix.com[Jakarta EE Starter^] +
 https://github.com/flowlogix[FlowLogix GitHub Org^] +
 https://jenkins.flowlogix.com[Jenkins build system^] +
 https://nexus.flowlogix.com[Sonatype Nexus repository^] +
