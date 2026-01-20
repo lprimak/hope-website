@@ -18,10 +18,7 @@ https://payara.fish[Payara Platform^] +
 Java application platform and Runtime.
 
 === Aviation
-https://silverhawkaviation.com[Silverhawk Aviation^] +
-Best charter and fractional company in the Midwest. +
-https://nycairservice.com[NYC Air Service^] +
-Best flight instruction and air tour in NYC. +
+https://valeri-aviation.thinkific.com[Valeri Aviation^] +
 
 === Music
 https://battlecopmusic.com[BattleCop^] +

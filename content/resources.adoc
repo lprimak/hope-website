@@ -24,6 +24,3 @@ https://apps.hope.nyc.ny.us/jee-examples[FlowLogix Sample Program^]
 == Resume
 link:resume/pilot-resume.html[Pilot Resume^] (link:resume/pilot-resume.pdf[PDF^]) +
 link:resume/resume.html[Technology Resume^] (link:resume/resume.pdf[PDF^]) +
-
-=== Silverhawk
-link:https://forms.microsoft.com/r/fUBNgqVeGV[Post-Flight Checklist^]
