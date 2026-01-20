@@ -47,5 +47,5 @@ https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7443311[Patent 
 - Eclipse Jersey
 - Underscore.js
 
----
-View my link:resume/resume.html[Resume^] (link:resume/resume.pdf[PDF^])
+'''
+Visit my link:resume/resume.html[Resume^] or View my link:resume/resume.pdf[Resume in PDF format^]
