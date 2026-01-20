@@ -48,4 +48,4 @@ https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7443311[Patent 
 - Underscore.js
 
 '''
-Visit my link:resume/resume.html[Resume^] or View my link:resume/resume.pdf[Resume in PDF format^]
+link:resume/resume.html[Visit my Resume^] or View my link:resume/resume.pdf[Resume in PDF format^]
