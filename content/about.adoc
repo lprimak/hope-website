@@ -10,7 +10,7 @@ image::img/pics/portrait-plane.jpg[Lenny Portrait,500vw,375vh,link=photos.html]
 
 {zwsp}
 ++++
-<a href="#footer" class="btn btn-primary btn-lg">Please email me, or follow me<br> on your favorite social networks<br> (bottom of the page)</a>
+<a href="#footer" class="btn btn-primary btn-lg">Please email me, or follow me<br> on your favorite social networks</a>
 ++++
 
 == Early Years
