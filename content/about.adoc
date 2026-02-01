@@ -1,6 +1,6 @@
-= About Me
+= About Lenny
 :jbake-type: page
-:description: A guy in Nebraska maintaining Open Source software
+:description: Pilot in Nebraska maintaining Open Source software
 :idprefix:
 :linkattrs:
 :jbake-status: published
