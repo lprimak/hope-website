@@ -1,6 +1,7 @@
 = Resources
 :jbake-type: page
 :description: Resource Links and Resume
+:keywords: resources, links, resume, pilot, aviation, development
 :idprefix:
 :linkattrs:
 :jbake-status: published

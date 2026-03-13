@@ -1,6 +1,7 @@
 = Blogs
 :jbake-type: page
 :description: Blogs - Personal and Sensible Development
+:keywords: blogs, personal, sensible development, medium
 :idprefix:
 :linkattrs:
 :jbake-status: published

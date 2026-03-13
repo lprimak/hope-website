@@ -1,6 +1,7 @@
 = Technology
 :jbake-type: page
 :description: Technology and Software Development
+:keywords: technology, software development, open source, patents, contributions
 :idprefix:
 :linkattrs:
 :jbake-status: published

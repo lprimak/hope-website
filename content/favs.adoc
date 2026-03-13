@@ -1,6 +1,7 @@
 = Useful Things
 :jbake-type: page
 :description: Some of my favorite links
+:keywords: useful, links, technology, aviation, music, child development
 :idprefix:
 :linkattrs:
 :jbake-status: published

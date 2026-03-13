@@ -1,6 +1,7 @@
 = Photos
 :jbake-type: page
 :description: Photo albums
+:keywords: photos, albums, travel, wedding, engagement
 :idprefix:
 :linkattrs:
 :jbake-status: published

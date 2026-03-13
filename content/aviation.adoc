@@ -1,6 +1,7 @@
 = Aviation
 :jbake-type: page
 :description: Lenny's Aviation Journey
+:keywords: aviation, pilot, flight time, ATP certificate, rotorcraft-helicopter rating, type ratings
 :idprefix:
 :linkattrs:
 :jbake-status: published
